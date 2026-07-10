@@ -1,0 +1,60 @@
+{
+  "note": "All visual assets are existing Wikimedia Commons images; no generated images are used. Check each source page for attribution and license details.",
+  "sources": [
+    {
+      "asset": "hero.jpg",
+      "source_file": "52nd G7 summit family photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:52nd_G7_summit_family_photo.jpg"
+    },
+    {
+      "asset": "roundtable.jpg",
+      "source_file": "G7 leaders on Day 1 roundtable meeting at Scholss Elmau Summit (2).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:G7_leaders_on_Day_1_roundtable_meeting_at_Scholss_Elmau_Summit_(2).jpg"
+    },
+    {
+      "asset": "leaders.jpg",
+      "source_file": "Group photo of the G7 members under the Alps at the Scholss Elmau summit.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Group_photo_of_the_G7_members_under_the_Alps_at_the_Scholss_Elmau_summit.jpg"
+    },
+    {
+      "asset": "uk.jpg",
+      "source_file": "Prime Minister Keir Starmer meets Prime Minister of Japan Sanae Takaichi.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Prime_Minister_Keir_Starmer_meets_Prime_Minister_of_Japan_Sanae_Takaichi.jpg"
+    },
+    {
+      "asset": "italy.jpg",
+      "source_file": "Sanae Takaichi and Giorgia Meloni Italy-Japan summit 04.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sanae_Takaichi_and_Giorgia_Meloni_Italy-Japan_summit_04.jpg"
+    },
+    {
+      "asset": "france.jpg",
+      "source_file": "Sanae Takaichi and Emmanuel Macron visit to Astroscale (2).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sanae_Takaichi_and_Emmanuel_Macron_visit_to_Astroscale_(2).jpg"
+    },
+    {
+      "asset": "divide.jpg",
+      "source_file": "Electric Skies Over Silent Silhouettes.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Electric_Skies_Over_Silent_Silhouettes.jpg"
+    },
+    {
+      "asset": "pm.jpg",
+      "source_file": "Official portrait of Sanae Takaichi, Prime Minister of Japan (HD).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Official_portrait_of_Sanae_Takaichi,_Prime_Minister_of_Japan_(HD).jpg"
+    },
+    {
+      "asset": "usa.jpg",
+      "source_file": "January 2025 Official Presidential Portrait of Donald J. Trump.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:January_2025_Official_Presidential_Portrait_of_Donald_J._Trump.jpg"
+    },
+    {
+      "asset": "tanker.jpg",
+      "source_file": "Oil Tanker in North Sea 3928.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Oil_Tanker_in_North_Sea_3928.jpg"
+    },
+    {
+      "asset": "mine.jpg",
+      "source_file": "Mountain Pass Rare Earth Mine, Mountain Pass, California (15469739669).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Mountain_Pass_Rare_Earth_Mine,_Mountain_Pass,_California_(15469739669).jpg"
+    }
+  ]
+}

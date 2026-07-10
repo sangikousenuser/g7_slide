@@ -1,85 +1,554 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="generator" content="html-slides v0.9.4">
-  <title>G7サミットと日本の外交</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{--ink:#f4f1ea;--muted:#b7b3aa;--line:rgba(244,241,234,.22);--navy:#071a2d;--blue:#23a5e8;--red:#e94b45;--gold:#f2bd4b;--mint:#5bd6b2;--pad:clamp(2rem,6vw,7rem);--h1:clamp(3.4rem,9vw,9.4rem);--h2:clamp(2.2rem,5.2vw,5.5rem);--lead:clamp(1.05rem,1.8vw,2.1rem);--body:clamp(.9rem,1.35vw,1.55rem);--small:clamp(.7rem,.85vw,1rem)}
-    *{box-sizing:border-box}html,body{margin:0;height:100%;overflow:hidden;background:var(--navy);color:var(--ink);font-family:'Noto Sans JP',sans-serif}.deck{height:100%;width:100%}.slide{width:100vw;height:100vh;height:100dvh;overflow:hidden;display:none;position:relative;background:var(--navy);isolation:isolate}.slide.active{display:flex}.slide::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 88% 12%,rgba(35,165,232,.16),transparent 23%),radial-gradient(circle at 10% 92%,rgba(233,75,69,.11),transparent 27%);z-index:-2}.slide::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);background-size:46px 46px;z-index:-1;mask-image:linear-gradient(to bottom,black,transparent)}.slide-content{padding:var(--pad);width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;max-height:100%;overflow:hidden}.eyebrow,.kicker{font:500 clamp(.65rem,.95vw,1rem)/1 'DM Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--mint)}.slide-title{font-size:var(--h2);letter-spacing:-.06em;line-height:1.1;margin:0 0 clamp(1rem,2vw,2rem);font-weight:900;max-width:13ch}.lead{font-size:var(--lead);line-height:1.65;color:var(--muted);max-width:48ch}.strong{color:var(--ink);font-weight:700}.page{position:absolute;right:var(--pad);bottom:clamp(1.5rem,3vw,3rem);font:500 var(--small) 'DM Mono',monospace;color:var(--muted)}.progress{position:fixed;top:0;left:0;height:5px;background:var(--gold);z-index:20;transition:width .45s cubic-bezier(.16,1,.3,1)}.nav{position:fixed;right:clamp(1.2rem,2.5vw,3rem);top:50%;transform:translateY(-50%);z-index:20;display:flex;flex-direction:column;gap:7px}.nav button{width:9px;height:9px;border:1px solid rgba(255,255,255,.7);background:transparent;border-radius:50%;padding:0;cursor:pointer}.nav button.active{background:var(--gold);border-color:var(--gold);transform:scale(1.45)}
-    .title-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:4vw;align-items:center}.title h1{font-family:'Playfair Display','Noto Sans JP',serif;font-size:var(--h1);line-height:.88;letter-spacing:-.07em;margin:clamp(.5rem,2vw,2rem) 0}.title .jp{font-family:'Noto Sans JP',sans-serif;font-size:clamp(1.1rem,2.1vw,2.25rem);letter-spacing:.06em;color:var(--gold)}.orbital{width:min(34vw,520px);aspect-ratio:1;border:1px solid var(--line);border-radius:50%;position:relative;margin:auto;animation:float 7s ease-in-out infinite}.orbital:before,.orbital:after{content:'';position:absolute;border-radius:50%;border:1px solid var(--line)}.orbital:before{inset:12%;border-color:rgba(35,165,232,.8)}.orbital:after{inset:28%;background:var(--red);border:0;box-shadow:0 0 60px rgba(233,75,69,.55)}.orbit-dot{position:absolute;width:12px;height:12px;background:var(--gold);border-radius:50%;top:6%;left:45%;box-shadow:0 0 22px var(--gold);animation:orbit 10s linear infinite;transform-origin:5% 380%}.seven{position:absolute;inset:0;display:grid;place-items:center;font:800 clamp(5rem,13vw,12rem)/1 'Playfair Display',serif;color:rgba(244,241,234,.92)}
-    .agenda{display:grid;grid-template-columns:1fr 1.6fr;gap:5vw;align-items:center}.agenda-list{list-style:none;padding:0;margin:0;display:grid;gap:clamp(.8rem,1.7vw,1.5rem);counter-reset:item}.agenda-list li{counter-increment:item;border-bottom:1px solid var(--line);padding:.1em 0 .75em;display:flex;gap:1rem;font-size:clamp(1.1rem,2vw,2.1rem);font-weight:700}.agenda-list li:before{content:'0' counter(item);font:500 var(--small) 'DM Mono',monospace;color:var(--gold);padding-top:.45em}.question{font-size:clamp(2.8rem,5.5vw,6.4rem);line-height:1.15;letter-spacing:-.07em;font-weight:900;max-width:11ch}.question em{color:var(--gold);font-style:normal}.thoughts{display:flex;flex-wrap:wrap;gap:clamp(.5rem,1vw,1rem);max-width:70ch}.thoughts span{border:1px solid var(--line);border-radius:999px;padding:.55em 1em;color:var(--muted);font-size:var(--body);animation:pulse 4s ease-in-out infinite}.thoughts span:nth-child(2n){animation-delay:-2s}
-    .members{display:grid;grid-template-columns:1.1fr .9fr;gap:4vw;align-items:center}.country-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(.6rem,1vw,1rem)}.country{border:1px solid var(--line);min-height:clamp(4.8rem,8vw,8rem);display:grid;place-items:center;font-size:clamp(1.2rem,2.5vw,2.6rem);font-weight:900;background:rgba(255,255,255,.03)}.country:nth-child(1),.country:nth-child(6){border-color:var(--red);color:var(--red)}.country:last-child{grid-column:span 2;color:var(--mint)}.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:clamp(1rem,3vw,3rem);position:relative}.timeline:before{content:'';position:absolute;left:7%;right:7%;top:16%;height:1px;background:var(--line)}.time{display:grid;gap:.7rem;justify-items:center;text-align:center;font-size:var(--body)}.time b{width:clamp(1.8rem,3vw,3rem);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:var(--navy);font:700 var(--small) 'DM Mono',monospace;z-index:1}.time span{color:var(--muted)}
-    .theme-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(.8rem,2vw,2rem);max-width:1200px}.theme{padding:clamp(1.1rem,2vw,2rem);border-left:5px solid var(--blue);background:rgba(255,255,255,.05);font-size:var(--body);font-weight:700;min-height:clamp(6rem,11vw,11rem);display:flex;align-items:end;position:relative;overflow:hidden}.theme:before{content:attr(data-num);position:absolute;right:.2em;top:-.25em;font:800 clamp(4rem,9vw,9rem)/1 'Playfair Display';color:rgba(255,255,255,.06)}.theme:nth-child(2){border-color:var(--red)}.theme:nth-child(3){border-color:var(--gold)}.theme:nth-child(4){border-color:var(--mint)}
-    .policy{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1rem,3vw,4rem);max-width:1300px}.policy-card{border-top:2px solid var(--gold);padding-top:1.1rem}.policy-card h3{font-size:clamp(1.4rem,2.6vw,2.8rem);margin:0 0 .7rem;letter-spacing:-.04em}.policy-card p{margin:0;font-size:var(--body);line-height:1.6;color:var(--muted)}.policy-card ul{list-style:none;padding:0;display:grid;gap:.7rem;font-size:var(--body)}.policy-card li:before{content:'→';color:var(--mint);padding-right:.6em}.policy-card:nth-child(2){border-color:var(--mint)}
-    .tension{display:grid;grid-template-columns:1fr .72fr 1fr;gap:clamp(1rem,2vw,2rem);align-items:center}.pole{min-height:clamp(13rem,26vw,27rem);padding:clamp(1rem,2vw,2rem);border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between}.pole .label{font:700 clamp(1.5rem,3.5vw,4rem)/1 'Playfair Display';letter-spacing:-.05em}.pole ul{padding:0;margin:0;list-style:none;font-size:var(--body);line-height:1.8;color:var(--muted)}.pole.us{background:linear-gradient(135deg,rgba(233,75,69,.24),transparent)}.pole.eu{background:linear-gradient(225deg,rgba(35,165,232,.24),transparent)}.common{text-align:center;font-weight:700;font-size:var(--body);line-height:1.7}.common .ring{width:clamp(7rem,15vw,14rem);aspect-ratio:1;border-radius:50%;margin:0 auto 1rem;border:2px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-size:clamp(1rem,2vw,2rem);animation:pulse 3s ease-in-out infinite}.bridge{display:grid;grid-template-columns:1fr auto 1fr;gap:1.3rem;align-items:center;max-width:1200px}.bridge-node{border:1px solid var(--line);padding:clamp(1rem,2vw,2rem);font-size:clamp(1.2rem,2.6vw,2.6rem);font-weight:900;text-align:center}.bridge-node.jp{background:var(--gold);color:var(--navy);border-color:var(--gold)}.bridge-line{height:2px;width:clamp(4rem,15vw,14rem);background:linear-gradient(90deg,var(--blue),var(--gold),var(--red));position:relative}.bridge-line:after{content:'⇄';position:absolute;left:45%;top:50%;transform:translate(-50%,-53%);font-size:clamp(1.5rem,2.5vw,2.5rem);color:var(--ink);background:var(--navy);padding:0 .2em}.caption{font-size:var(--lead);color:var(--muted);max-width:55ch;margin-top:clamp(1.3rem,3vw,3rem)}
-    .perception{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(.7rem,1.5vw,1.5rem);max-width:1250px}.view{padding:clamp(1rem,2vw,2rem);border:1px solid var(--line);min-height:clamp(8rem,14vw,14rem);display:flex;flex-direction:column;justify-content:space-between}.view h3{font-size:clamp(1.15rem,2.1vw,2.2rem);margin:0}.view p{font-size:var(--body);color:var(--muted);margin:.5rem 0 0;line-height:1.55}.view .source{font:500 var(--small) 'DM Mono',monospace;color:var(--mint)}.view.critical{border-color:rgba(233,75,69,.65)}.view.positive{border-color:rgba(91,214,178,.65)}
-    .supply{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.8rem,1.5vw,1.5rem);max-width:1280px}.supply-card{position:relative;border:1px solid var(--line);padding:clamp(1rem,2vw,2rem);min-height:clamp(12rem,23vw,23rem);overflow:hidden}.supply-card .num{font:800 clamp(4rem,9vw,8rem)/1 'Playfair Display';color:rgba(255,255,255,.1)}.supply-card h3{font-size:clamp(1.3rem,2.5vw,2.5rem);margin:.2em 0}.supply-card p{font-size:var(--body);line-height:1.6;color:var(--muted)}.supply-card:after{content:'';position:absolute;left:0;bottom:0;height:5px;width:100%;background:var(--blue);transform-origin:left;animation:grow 2s cubic-bezier(.16,1,.3,1) both}.supply-card:nth-child(2):after{background:var(--mint);animation-delay:.25s}.supply-card:nth-child(3):after{background:var(--gold);animation-delay:.5s}.route{display:grid;grid-template-columns:1fr .75fr 1fr;align-items:center;gap:1rem;max-width:1300px}.route-point{font-weight:900;font-size:clamp(1.4rem,3vw,3.3rem);padding:clamp(1rem,2vw,2rem);border:1px solid var(--line)}.route-point.end{border-color:var(--red)}.sea{height:clamp(8rem,20vw,18rem);border-top:3px solid var(--blue);border-bottom:3px solid var(--blue);border-radius:50%;position:relative;overflow:hidden}.sea:before{content:'HORMUZ';position:absolute;inset:0;display:grid;place-items:center;font:500 clamp(.8rem,1.3vw,1.3rem) 'DM Mono',monospace;letter-spacing:.15em;color:var(--blue)}.ship{position:absolute;bottom:28%;left:-8%;font-size:clamp(2rem,5vw,5rem);animation:sail 6s linear infinite}.reserve{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(2rem,5vw,6rem);align-items:center}.gauge{width:min(34vw,430px);aspect-ratio:1;border-radius:50%;background:conic-gradient(var(--gold) 0 72%,rgba(255,255,255,.12) 72%);display:grid;place-items:center;position:relative;margin:auto}.gauge:before{content:'';width:72%;aspect-ratio:1;border-radius:50%;background:var(--navy)}.gauge span{position:absolute;font:900 clamp(2rem,5vw,5rem)/1 'Playfair Display';color:var(--gold)}.checklist{list-style:none;margin:0;padding:0;display:grid;gap:clamp(.8rem,1.6vw,1.5rem);font-size:var(--body)}.checklist li{border-bottom:1px solid var(--line);padding:0 0 .8em}.checklist li:before{content:'✓';color:var(--mint);font-weight:900;padding-right:.7em}.verdict{display:grid;grid-template-columns:.85fr 1.15fr;gap:5vw;align-items:center}.grade{font:800 clamp(9rem,22vw,23rem)/.8 'Playfair Display';color:var(--gold);letter-spacing:-.11em}.grade small{display:block;font:500 var(--small) 'DM Mono',monospace;color:var(--muted);letter-spacing:.1em;margin-left:.3em}.verdict-list{list-style:none;margin:0;padding:0;display:grid;gap:clamp(.8rem,1.5vw,1.3rem);font-size:var(--body)}.verdict-list li{padding-left:1.1em;position:relative}.verdict-list li:before{content:'+';position:absolute;left:0;color:var(--mint);font-weight:900}.verdict-list li:last-child:before{content:'△';color:var(--gold)}
-    .sources{columns:2;gap:4vw;max-width:1350px;font-size:clamp(.68rem,.95vw,1rem);line-height:1.7;color:var(--muted);overflow-wrap:anywhere}.sources p{break-inside:avoid;margin:0 0 1em}.sources a{color:var(--mint)}.closing{justify-content:center;text-align:center}.closing h2{font:900 var(--h2)/1.1 'Noto Sans JP';letter-spacing:-.07em;margin:0 auto;max-width:12ch}.closing p{font-size:var(--lead);color:var(--muted);margin:1.2em auto;max-width:44ch}
-    .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}.active .reveal{opacity:1;transform:none}.active .reveal:nth-child(2){transition-delay:.12s}.active .reveal:nth-child(3){transition-delay:.24s}@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes pulse{50%{transform:scale(1.04);box-shadow:0 0 24px rgba(242,189,75,.15)}}@keyframes float{50%{transform:translateY(-13px)}}@keyframes orbit{to{transform:rotate(360deg)}}@keyframes sail{to{left:103%}}@media(max-height:680px){:root{--pad:clamp(1.5rem,4vw,4rem)}.slide-title{margin-bottom:.7rem}.supply-card,.pole{min-height:9rem}.sources{font-size:.62rem}}@media(max-width:760px){.title-grid,.agenda,.members,.policy,.tension,.bridge,.reserve,.verdict{grid-template-columns:1fr}.orbital{width:min(60vw,320px)}.theme-grid,.perception{grid-template-columns:1fr}.supply{grid-template-columns:1fr 1fr}.route{grid-template-columns:1fr}.sea{height:5rem}.nav{display:none}.sources{columns:1}}
-    /* === PROJECTOR THEME: FIXED 16:9 / LIGHT CANVAS === */
-    :root{--ink:#132238;--muted:#5a6574;--line:rgba(19,34,56,.18);--navy:#fffdfa;--blue:#1667aa;--red:#bd3834;--gold:#b87817;--mint:#167f68}
-    html,body{background:#e8e5df}
-    .deck{display:grid;place-items:center;width:100vw;height:100vh;height:100dvh}
-    .slide{width:min(100vw,calc(100dvh * 16 / 9));height:min(100dvh,calc(100vw * 9 / 16));background:var(--navy);box-shadow:0 0 0 1px rgba(19,34,56,.08)}
-    .slide::before{background:radial-gradient(circle at 90% 8%,rgba(22,103,170,.09),transparent 24%),radial-gradient(circle at 7% 93%,rgba(189,56,52,.055),transparent 29%)}
-    .slide::after{background-image:linear-gradient(rgba(19,34,56,.038) 1px,transparent 1px),linear-gradient(90deg,rgba(19,34,56,.038) 1px,transparent 1px)}
-    .country{background:rgba(19,34,56,.025)}
-    .theme{background:rgba(19,34,56,.045)}
-    .theme:before,.supply-card .num{color:rgba(19,34,56,.07)}
-    .pole.us{background:linear-gradient(135deg,rgba(189,56,52,.12),transparent)}
-    .pole.eu{background:linear-gradient(225deg,rgba(22,103,170,.12),transparent)}
-    .bridge-line:after{background:var(--navy)}
-    .gauge{background:conic-gradient(var(--gold) 0 72%,rgba(19,34,56,.13) 72%)}
-    .gauge:before{background:var(--navy)}
-    .nav button{border-color:rgba(19,34,56,.56)}
-    .nav button.active{border-color:var(--gold)}
-    .country{grid-template-rows:1fr auto;padding:clamp(.45rem,.8vw,.8rem)}
-    .flag{width:clamp(2.4rem,4.8vw,5.2rem);max-height:clamp(1.6rem,3vw,3.2rem);object-fit:cover;box-shadow:0 1px 4px rgba(19,34,56,.18)}
-    .country span{font-size:var(--small);color:var(--ink)}
-    .g7-photo{position:absolute;right:var(--pad);bottom:calc(var(--pad) + clamp(1rem,3vw,3rem));width:clamp(13rem,25vw,28rem);margin:0;z-index:-1;opacity:.17;border:1px solid var(--line)}
-    .g7-photo img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.72) contrast(1.05)}
-    .sea{background:#f5f2eb}
-    .sea img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.82;mix-blend-mode:multiply}
-    .sea:before{z-index:1;background:rgba(255,253,250,.65);font-weight:700}
-    .ship{z-index:2}
-    .supply-photo{position:absolute;right:0;bottom:0;width:clamp(15rem,31vw,34rem);height:clamp(8rem,17vw,18rem);margin:0;overflow:hidden;opacity:.26;z-index:-1}
-    .supply-photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(.35) contrast(1.05)}
-    @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>G7 Évian 2026 — 高市外交、どう見る？</title>
+<style>
+:root{
+  --paper:#fff;
+  --ink:#142033;
+  --muted:#536276;
+  --blue:#1767d8;
+  --cyan:#25a9c9;
+  --red:#d74652;
+  --green:#20865a;
+  --gold:#e2a33d;
+  --line:#d8e1ee;
+  --soft:#f1f6ff;
+  --shadow:0 28px 72px rgba(18,42,78,.16);
+  --ease:cubic-bezier(.2,.78,.2,1);
+}
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#eaf0f7;color:var(--ink);font-family:"Yu Gothic UI","Hiragino Sans","Noto Sans JP",Meiryo,sans-serif}
+button{font:inherit}
+#stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 35%,#f9fbff 0,#e9eff7 72%)}
+#deck{position:relative;width:1920px;height:1080px;flex:0 0 auto;transform:scale(var(--deck-scale,1));transform-origin:center}
+.slide{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:var(--paper);opacity:0;pointer-events:none;transform:translateX(70px) scale(.992);transition:opacity .4s ease,transform .52s var(--ease)}
+.slide.active{opacity:1;pointer-events:auto;transform:none}
+.slide.past{transform:translateX(-70px) scale(.992)}
+.slide::before{content:"";position:absolute;left:0;right:0;top:0;height:14px;background:linear-gradient(90deg,var(--blue),var(--cyan));z-index:30}
+h1,h2,h3,p{margin:0}
+h1{font-size:116px;line-height:1.02;letter-spacing:-.055em;font-weight:950}
+h2{font-size:84px;line-height:1.07;letter-spacing:-.04em;font-weight:950}
+h3{font-size:50px;line-height:1.15;font-weight:950}
+p{font-size:46px;line-height:1.38;font-weight:700;color:var(--muted)}
+.kicker{font-size:38px;line-height:1;font-weight:950;letter-spacing:.13em;color:var(--blue);text-transform:uppercase}
+.pill{display:inline-flex;align-items:center;justify-content:center;min-height:70px;padding:15px 28px;border-radius:999px;background:var(--soft);border:3px solid #d9e7ff;color:#194f9e;font-size:38px;line-height:1.05;font-weight:950;white-space:nowrap}
+.card{background:rgba(255,255,255,.96);border:3px solid var(--line);border-radius:34px;box-shadow:0 18px 45px rgba(19,46,85,.10)}
+.photo{position:relative;overflow:hidden;border-radius:42px;background:#dfe7f1;box-shadow:var(--shadow)}
+.photo img{width:100%;height:100%;display:block;object-fit:cover}
+.photo::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(125deg,transparent 5%,rgba(255,255,255,.18) 42%,transparent 68%);transform:translateX(-130%)}
+.slide.active .photo::after{animation:shine 1.15s ease .18s both}
+@keyframes shine{to{transform:translateX(130%)}}
+.accent-word{color:var(--blue)}
+.red{color:var(--red)} .green{color:var(--green)}
+.reveal{opacity:0;filter:blur(7px);transform:translateY(30px) scale(.975);transition:opacity .52s ease,transform .62s var(--ease),filter .52s ease,box-shadow .5s ease,border-color .5s ease}
+.reveal.from-left{transform:translateX(-54px)}
+.reveal.from-right{transform:translateX(54px)}
+.reveal.pop{transform:scale(.82)}
+.reveal.wipe{clip-path:inset(0 100% 0 0);opacity:1;filter:none;transform:none;transition:clip-path .7s var(--ease)}
+.reveal.shown{opacity:1;filter:none;transform:none;clip-path:inset(0)}
+.reveal.shown.focus{border-color:#8eb9ff;box-shadow:0 0 0 7px rgba(23,103,216,.10),0 18px 45px rgba(19,46,85,.13)}
+.dim-on-progress{transition:opacity .45s ease,transform .45s ease}
+.slide.has-progress .dim-on-progress{opacity:.56;transform:scale(.988)}
+.slide.has-progress .dim-on-progress.last-shown{opacity:1;transform:none}
+.s2.step-3 .point,.s3.step-4 .agenda-item,.s9.step-4 .lens,.s10.step-4 .evidence-card{opacity:1;transform:none}
+#progress{position:fixed;left:0;bottom:0;height:8px;width:0;background:linear-gradient(90deg,var(--blue),var(--cyan));z-index:80;transition:width .35s ease}
+#notes{display:none;position:fixed;right:28px;bottom:28px;width:760px;max-height:62vh;overflow:auto;background:rgba(255,255,255,.98);border:3px solid var(--line);border-radius:28px;padding:28px 34px;box-shadow:var(--shadow);z-index:100;font-size:34px;line-height:1.5;font-weight:700}
+#notes.show{display:block}
+#notes b{display:block;font-size:40px;margin-bottom:12px;color:var(--blue)}
+#clickShield{position:fixed;inset:0;z-index:60;cursor:pointer}
+
+/* 1 — opening */
+.s1{background:#fff}
+.s1 .hero-photo{position:absolute;right:0;top:0;width:1160px;height:1080px;border-radius:0;box-shadow:none}
+.s1 .hero-photo img{object-position:center}
+.s1 .hero-photo::before{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,#fff 0,rgba(255,255,255,.92) 10%,rgba(255,255,255,.15) 58%,transparent 78%)}
+.s1.active .hero-photo img{animation:heroMove 9s ease-out both}
+@keyframes heroMove{from{transform:scale(1.08) translateX(24px)}to{transform:scale(1.015) translateX(0)}}
+.s1 .hero-copy{position:absolute;left:96px;top:118px;width:900px;z-index:5}
+.s1 h1{font-size:126px;margin-top:44px}
+.s1 .question{font-size:86px;line-height:1.08;font-weight:950;letter-spacing:-.045em;margin-top:28px}
+.s1 .sub{font-size:44px;line-height:1.45;width:760px;margin-top:38px;color:#526177;font-weight:760}
+.s1 .hero-tags{display:flex;gap:18px;margin-top:48px}
+.s1.active .intro-a{animation:upIn .75s var(--ease) .12s both}
+.s1.active .intro-b{animation:upIn .8s var(--ease) .34s both}
+.s1.active .intro-c{animation:upIn .8s var(--ease) .54s both}
+.s1.active .intro-d{animation:upIn .8s var(--ease) .72s both}
+@keyframes upIn{from{opacity:0;transform:translateY(34px);filter:blur(7px)}to{opacity:1;transform:none;filter:none}}
+
+/* 2 — what G7 does */
+.s2 .layout{height:100%;padding:82px 92px;display:grid;grid-template-columns:760px 1fr;gap:60px}
+.s2 .copy{display:flex;flex-direction:column;justify-content:center}
+.s2 .copy p{margin-top:30px}
+.s2 .round-photo{height:916px;border-radius:50%;align-self:center;aspect-ratio:1}
+.s2 .round-photo img{object-position:center}
+.s2 .orbit{position:absolute;right:150px;top:108px;width:790px;height:790px;border-radius:50%;border:4px solid rgba(23,103,216,.10);pointer-events:none}
+.s2 .orbit::before,.s2 .orbit::after{content:"";position:absolute;border-radius:50%;inset:70px;border:3px dashed rgba(23,103,216,.14)}
+.s2 .orbit::after{inset:150px;border-style:solid}
+.s2 .point-stack{display:grid;gap:20px;margin-top:46px}
+.s2 .point{position:relative;padding:24px 28px 24px 94px;min-height:92px;display:flex;align-items:center;font-size:41px;line-height:1.18;font-weight:900}
+.s2 .point .n{position:absolute;left:22px;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;font-size:30px}
+.s2 .point:nth-child(2) .n{background:var(--cyan)}
+.s2 .point:nth-child(3) .n{background:var(--green)}
+.s2 .connector{position:absolute;left:690px;top:337px;width:140px;height:4px;background:linear-gradient(90deg,var(--blue),transparent);transform-origin:left;transform:scaleX(0);transition:transform .75s var(--ease)}
+.s2.step-2 .connector{transform:scaleX(1)}
+
+/* 3 — four issues */
+.s3 .bg-photo{position:absolute;right:0;top:0;width:1040px;height:1080px;border-radius:0;box-shadow:none}
+.s3 .bg-photo img{filter:saturate(.9);object-position:58% center}
+.s3 .bg-photo::before{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,#fff 0,rgba(255,255,255,.96) 13%,rgba(255,255,255,.32) 62%,rgba(255,255,255,.08))}
+.s3 .layout{position:relative;z-index:4;height:100%;padding:84px 92px;width:1200px}
+.s3 p{margin-top:28px;width:790px}
+.s3 .agenda{margin-top:52px;display:grid;grid-template-columns:1fr 1fr;gap:22px;width:940px}
+.s3 .agenda-item{position:relative;padding:30px 26px 30px 98px;min-height:132px;display:flex;align-items:center;font-size:44px;font-weight:950}
+.s3 .agenda-item .dot{position:absolute;left:28px;width:48px;height:48px;border-radius:50%;background:#dbe9ff;border:12px solid #fff;box-shadow:0 0 0 4px #78a8ef}
+.s3 .agenda-item.shown .dot{animation:ring .85s ease both}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(23,103,216,.3)}70%{box-shadow:0 0 0 26px rgba(23,103,216,0)}100%{box-shadow:0 0 0 4px #78a8ef}}
+.s3 .focus-caption{position:absolute;right:100px;bottom:80px;padding:18px 28px;border-radius:999px;background:rgba(255,255,255,.9);font-size:38px;font-weight:950;color:var(--blue);box-shadow:var(--shadow)}
+
+/* 4 — Japan's aim */
+.s4 .layout{height:100%;padding:76px 92px;display:grid;grid-template-rows:auto 1fr;gap:34px}
+.s4 .head{display:flex;align-items:end;justify-content:space-between}
+.s4 .head p{width:700px;text-align:right;font-size:43px}
+.s4 .triptych{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:26px;align-items:stretch}
+.s4 .leader{position:relative;height:770px;border-radius:38px;overflow:hidden;box-shadow:var(--shadow);border:4px solid #fff}
+.s4 .leader img{width:100%;height:100%;object-fit:cover}
+.s4 .leader::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(8,24,48,.80))}
+.s4 .leader .who{position:absolute;z-index:3;left:28px;right:28px;bottom:30px;color:#fff;font-size:38px;font-weight:950}
+.s4 .leader .who small{display:block;font-size:30px;margin-top:7px;font-weight:750;opacity:.86}
+.s4 .bridge{position:absolute;left:9%;right:9%;bottom:118px;height:9px;border-radius:999px;background:linear-gradient(90deg,var(--blue),var(--cyan),var(--green));transform-origin:left;transform:scaleX(0);transition:transform .9s var(--ease);z-index:5;box-shadow:0 0 22px rgba(23,103,216,.35)}
+.s4.step-3 .bridge{transform:scaleX(1)}
+.s4 .thesis{position:absolute;left:50%;bottom:56px;transform:translateX(-50%) translateY(28px);opacity:0;z-index:6;width:930px;padding:22px 36px;text-align:center;border-radius:999px;background:#fff;border:4px solid #d7e7ff;box-shadow:var(--shadow);font-size:43px;font-weight:950;color:#174b94;transition:.6s var(--ease)}
+.s4.step-3 .thesis{opacity:1;transform:translateX(-50%)}
+
+/* 5 — US / Europe gap */
+.s5 .storm{position:absolute;inset:0;background:#061022}
+.s5 .storm img{width:100%;height:100%;object-fit:cover;filter:saturate(.85) brightness(.55);transform:scale(1.14)}
+.s5 .storm::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(12,48,102,.05),rgba(3,11,24,.72) 74%)}
+.s5 .title{position:absolute;left:92px;top:74px;z-index:3;color:#fff}
+.s5 .title h2{font-size:78px}
+.s5 .title p{color:#d7e7ff;margin-top:18px;font-size:40px}
+.s5 .side{position:absolute;top:300px;width:690px;min-height:465px;padding:44px;border-radius:38px;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);box-shadow:0 28px 70px rgba(0,0,0,.28)}
+.s5 .usa-side{left:92px}
+.s5 .eu-side{right:92px}
+.s5 .side h3{font-size:66px;color:var(--blue)}
+.s5 .eu-side h3{color:var(--green)}
+.s5 .side .bigline{font-size:52px;line-height:1.18;font-weight:950;margin-top:38px}
+.s5 .side .detail{font-size:39px;line-height:1.35;font-weight:800;color:#536276;margin-top:24px}
+.s5 .vs{position:absolute;left:50%;top:520px;transform:translate(-50%,-50%) scale(.7);opacity:0;z-index:5;width:170px;height:170px;border-radius:50%;display:grid;place-items:center;background:#fff;border:8px solid #bcd8ff;color:var(--blue);font-size:56px;font-weight:950;box-shadow:0 0 70px rgba(71,181,255,.7);transition:.55s var(--ease)}
+.s5.step-3 .vs{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.s5 .same{position:absolute;left:50%;bottom:80px;transform:translateX(-50%) translateY(25px);opacity:0;z-index:4;padding:20px 34px;background:rgba(255,255,255,.95);border-radius:999px;font-size:42px;font-weight:950;color:#173c78;transition:.55s var(--ease)}
+.s5.step-3 .same{opacity:1;transform:translateX(-50%)}
+
+/* 6 — bridge role */
+.s6 .layout{height:100%;padding:74px 92px;display:grid;grid-template-columns:760px 1fr;gap:42px}
+.s6 .left{display:flex;flex-direction:column;justify-content:center}
+.s6 .left p{margin-top:28px}
+.s6 .pm-photo{height:570px;margin-top:36px}
+.s6 .pm-photo img{object-position:center 26%}
+.s6 .network{position:relative;height:932px}
+.s6 .node{position:absolute;overflow:hidden;border-radius:38px;box-shadow:var(--shadow);border:4px solid #fff;background:#eaf0f7}
+.s6 .node img{width:100%;height:100%;object-fit:cover}
+.s6 .node .node-label{position:absolute;left:20px;bottom:18px;padding:12px 20px;border-radius:999px;background:rgba(255,255,255,.94);font-size:34px;font-weight:950;color:#173c78}
+.s6 .node-us{left:42px;top:82px;width:430px;height:360px}
+.s6 .node-eu{right:0;top:82px;width:430px;height:360px}
+.s6 .node-g7{left:245px;bottom:52px;width:500px;height:338px}
+.s6 .routes{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.s6 .route{fill:none;stroke-width:9;stroke-linecap:round;stroke-dasharray:650;stroke-dashoffset:650;transition:stroke-dashoffset .95s var(--ease)}
+.s6 .route.us{stroke:var(--blue)}
+.s6 .route.eu{stroke:var(--green)}
+.s6 .route.g7{stroke:var(--cyan)}
+.s6.step-1 .route.us{stroke-dashoffset:0}
+.s6.step-2 .route.eu{stroke-dashoffset:0}
+.s6.step-3 .route.g7{stroke-dashoffset:0}
+.s6 .verdict{position:absolute;left:50%;top:452px;transform:translateX(-50%) scale(.8);opacity:0;width:590px;padding:24px 28px;text-align:center;border-radius:30px;background:#fff;border:4px solid #dce8ff;box-shadow:var(--shadow);font-size:39px;line-height:1.25;font-weight:950;color:#173c78;transition:.58s var(--ease);z-index:6}
+.s6.step-3 .verdict{opacity:1;transform:translateX(-50%) scale(1)}
+
+/* 7 — energy */
+.s7 .layout{height:100%;display:grid;grid-template-columns:850px 1fr}
+.s7 .sea{height:100%;border-radius:0;box-shadow:none}
+.s7 .sea img{object-position:center}
+.s7 .sea::before{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,rgba(9,35,67,.08),rgba(9,35,67,.2))}
+.s7 .panel{padding:80px 92px 64px 64px;display:flex;flex-direction:column;justify-content:center}
+.s7 .panel p{margin-top:25px}
+.s7 .stat-row{display:flex;align-items:end;gap:24px;margin-top:36px}
+.s7 .stat{font-size:150px;line-height:.86;font-weight:950;letter-spacing:-.07em;color:var(--red)}
+.s7 .stat-unit{font-size:42px;font-weight:950;color:#8f3340;padding-bottom:10px}
+.s7 .meter{height:28px;background:#e7edf5;border-radius:999px;overflow:hidden;margin-top:22px}
+.s7 .meter-fill{height:100%;width:0;background:linear-gradient(90deg,#e96872,#d74652);border-radius:999px;transition:width 1.1s var(--ease)}
+.s7.step-1 .meter-fill{width:94.7%}
+.s7 .route-box{margin-top:32px;padding:28px}
+.s7 .route-title{font-size:39px;font-weight:950;margin-bottom:22px}
+.s7 .route{position:relative;height:82px;display:flex;align-items:center}
+.s7 .route-line{height:16px;flex:1;border-radius:999px;background:linear-gradient(90deg,#53a4e9,#1f6cc2)}
+.s7 .strait{width:70px;height:64px;margin:0 -4px;position:relative}
+.s7 .strait::before,.s7 .strait::after{content:"";position:absolute;left:0;right:0;height:22px;background:#fff;border:4px solid #afbdd0;transition:transform .65s var(--ease)}
+.s7 .strait::before{top:0;border-radius:0 0 40px 40px}
+.s7 .strait::after{bottom:0;border-radius:40px 40px 0 0}
+.s7.step-2 .strait::before{transform:translateY(9px)}
+.s7.step-2 .strait::after{transform:translateY(-9px)}
+.s7 .strait-label{position:absolute;left:50%;top:-43px;transform:translateX(-50%);white-space:nowrap;font-size:31px;font-weight:950;color:var(--red)}
+.s7 .impact{display:flex;align-items:center;justify-content:space-between;margin-top:28px}
+.s7 .impact-item{opacity:0;transform:translateY(18px);transition:.5s var(--ease);font-size:38px;font-weight:950;color:#173c78}
+.s7 .arrow{font-size:48px;color:#9bb2cf}
+.s7.step-3 .impact-item{opacity:1;transform:none}
+.s7.step-3 .impact-item:nth-child(1){transition-delay:.05s}
+.s7.step-3 .impact-item:nth-child(3){transition-delay:.2s}
+.s7.step-3 .impact-item:nth-child(5){transition-delay:.35s}
+
+/* 8 — critical minerals */
+.s8 .mine{position:absolute;inset:0;border-radius:0;box-shadow:none}
+.s8 .mine img{filter:saturate(.86) brightness(.84);transform:scale(1.02)}
+.s8 .mine::before{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(8,22,40,.18),rgba(8,22,40,.72) 78%)}
+.s8 .copy{position:absolute;left:92px;top:72px;z-index:4;color:#fff;width:1050px}
+.s8 .copy p{color:#eef6ff;margin-top:20px;font-size:42px}
+.s8 .chain-card{position:absolute;left:92px;right:92px;bottom:70px;z-index:5;padding:34px 42px 32px;background:rgba(255,255,255,.96);border-radius:38px;box-shadow:0 28px 70px rgba(0,0,0,.24)}
+.s8 .chain{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:26px;align-items:center}
+.s8 .chain::before{content:"";position:absolute;left:11%;right:11%;top:48px;height:12px;background:#d6e1ef;border-radius:999px}
+.s8 .chain::after{content:"";position:absolute;left:11%;top:48px;width:0;height:12px;background:linear-gradient(90deg,var(--blue),var(--cyan),var(--green));border-radius:999px;transition:width 1.05s var(--ease)}
+.s8.step-1 .chain::after{width:78%}
+.s8 .stage-node{position:relative;z-index:2;text-align:center;font-size:39px;font-weight:950;color:#173c78}
+.s8 .stage-node i{display:block;width:82px;height:82px;margin:0 auto 20px;border-radius:50%;background:#fff;border:10px solid #cfe0f7;box-shadow:0 0 0 4px #77a8eb}
+.s8 .bottleneck{position:absolute;left:48%;top:7px;width:34px;height:94px;background:repeating-linear-gradient(135deg,#d74652 0 12px,#fff 12px 24px);border:4px solid #b8313c;border-radius:10px;opacity:0;transform:scaleY(.5);transition:.5s var(--ease);z-index:4}
+.s8.step-1 .bottleneck{opacity:1;transform:none}
+.s8 .measures{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;margin-top:28px}
+.s8 .measure{padding:22px 28px;border-radius:26px;background:var(--soft);border:3px solid #dae8ff;font-size:37px;line-height:1.22;font-weight:950;color:#173c78}
+.s8 .measure b{color:var(--blue)}
+
+/* 9 — perspectives */
+.s9 .layout{height:100%;padding:74px 92px;display:grid;grid-template-columns:720px 1fr;gap:48px}
+.s9 .left{display:flex;flex-direction:column;justify-content:center}
+.s9 .left p{margin-top:28px}
+.s9 .group-photo{height:548px;margin-top:38px}
+.s9 .lenses{display:grid;gap:22px;align-content:center}
+.s9 .lens{position:relative;min-height:225px;padding:34px 34px 32px 148px;overflow:hidden}
+.s9 .lens .lens-dot{position:absolute;left:38px;top:50%;transform:translateY(-50%);width:82px;height:82px;border-radius:50%;border:16px solid var(--blue);box-shadow:0 0 0 14px rgba(23,103,216,.10)}
+.s9 .lens:nth-child(2) .lens-dot{border-color:var(--red);box-shadow:0 0 0 14px rgba(215,70,82,.10)}
+.s9 .lens:nth-child(3) .lens-dot{border-color:var(--green);box-shadow:0 0 0 14px rgba(32,134,90,.10)}
+.s9 .lens .label{font-size:35px;font-weight:950;color:var(--blue)}
+.s9 .lens:nth-child(2) .label{color:var(--red)}
+.s9 .lens:nth-child(3) .label{color:var(--green)}
+.s9 .lens .claim{font-size:47px;line-height:1.2;font-weight:950;margin-top:12px}
+.s9 .question{position:absolute;left:50%;bottom:46px;transform:translateX(-50%) translateY(18px);opacity:0;padding:18px 30px;border-radius:999px;background:#fff;border:4px solid #d9e7ff;box-shadow:var(--shadow);font-size:40px;font-weight:950;color:#173c78;transition:.55s var(--ease)}
+.s9.step-4 .question{opacity:1;transform:translateX(-50%)}
+
+/* 10 — evaluation */
+.s10 .layout{height:100%;display:grid;grid-template-columns:810px 1fr}
+.s10 .panel{padding:50px 54px 46px 92px;display:flex;flex-direction:column;justify-content:center}
+.s10 .panel h2{font-size:76px;line-height:1.02}.s10 .panel p{margin-top:18px;font-size:40px;line-height:1.28}
+.s10 .evidence{display:grid;gap:14px;margin-top:24px}
+.s10 .evidence-card{padding:19px 26px;font-size:37px;font-weight:950;color:#173c78}
+.s10 .balance{margin-top:22px}
+.s10 .track{position:relative;height:34px;background:#e7edf5;border-radius:999px}
+.s10 .track::before{content:"";position:absolute;left:50%;top:-10px;width:5px;height:54px;background:#9aabc1}
+.s10 .needle{position:absolute;left:50%;top:50%;width:38px;height:38px;border-radius:50%;background:var(--blue);border:8px solid #fff;box-shadow:0 4px 16px rgba(0,0,0,.24);transform:translate(-50%,-50%);transition:left 1s var(--ease)}
+.s10.step-4 .needle{left:68%}
+.s10 .scale-labels{display:flex;justify-content:space-between;margin-top:12px;font-size:32px;font-weight:900;color:#6c7b8f}
+.s10 .final-verdict{margin-top:18px;font-size:58px;line-height:1.02;font-weight:950;letter-spacing:-.04em;color:var(--blue);opacity:0;transform:translateY(24px);transition:.65s var(--ease)}
+.s10.step-4 .final-verdict{opacity:1;transform:none}
+.s10 .leaders-photo{height:100%;border-radius:0;box-shadow:none}
+.s10 .leaders-photo img{object-position:center}
+.s10 .leaders-photo::before{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,rgba(255,255,255,.08),transparent 30%)}
+
+/* 11 — sources */
+.s11 .layout{height:100%;padding:76px 92px;display:grid;grid-template-columns:740px 1fr;gap:52px}
+.s11 .left{display:flex;flex-direction:column;justify-content:center}
+.s11 .left p{margin-top:28px}
+.s11 .source-photo{height:520px;margin-top:36px}
+.s11 .sources{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-content:center}
+.s11 .source{min-height:250px;padding:34px;display:flex;flex-direction:column;justify-content:center}
+.s11 .source .kind{font-size:34px;font-weight:950;color:var(--blue);margin-bottom:18px}
+.s11 .source .name{font-size:45px;line-height:1.2;font-weight:950}
+.s11 .source:nth-child(2) .kind{color:var(--green)}
+.s11 .source:nth-child(3) .kind{color:var(--red)}
+.s11 .source:nth-child(4) .kind{color:#80631f}
+.s11 .thanks{position:absolute;left:92px;bottom:54px;font-size:38px;font-weight:950;color:#758296}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+}
+</style>
 </head>
 <body>
-  <div class="progress" id="progress"></div><nav class="nav" id="slideNav" aria-label="スライド移動"></nav>
-  <main class="deck" id="deck">
-    <div class="slide active" data-slide="0"><div class="slide-content title-grid"><div class="title reveal"><div class="eyebrow">GROUP 7 · 2026</div><h1>G7<br>SUMMIT</h1><div class="jp">G7サミットと日本の外交</div><p class="lead">国際協調の場で、日本は何を発信し、どのような役割を果たそうとしたのか。</p></div><div class="orbital reveal"><div class="seven">7</div><i class="orbit-dot"></i></div></div><span class="page">01</span><script type="application/json" class="slide-notes">{"title":"G7サミットと日本の外交","script":"今回はG7サミットを入口に、会議の仕組みと、そこで日本が示した外交方針を見ていきます。特に注目したいのは、アメリカと欧州の関係、そしてエネルギーやサプライチェーンです。会議の発言だけでなく、日本がどんな立場で動こうとしたのかを、資料に沿って整理します。","notes":["G7の基本を確認する","日本の外交方針に注目する","対立と経済安全保障を軸に見る"]}</script></div>
-    <div class="slide" data-slide="1"><div class="slide-content agenda"><div class="reveal"><div class="kicker">TODAY</div><h2 class="slide-title">この発表で<br>たどること</h2></div><ol class="agenda-list reveal"><li>G7サミットの仕組み</li><li>今回、何が議論されたか</li><li>日本の外交方針と橋渡し</li><li>エネルギー安全保障</li><li>今回の動きの評価</li></ol></div><span class="page">02</span><script type="application/json" class="slide-notes">{"title":"発表の流れ","script":"最初にG7そのものがどんな会議なのかを確認します。その上で今回の主な議題、日本の外交方針、アメリカと欧州の関係、そしてエネルギー安全保障へ進みます。最後に、今回の日本の動きを成果と課題の両方から評価します。","notes":["会議の基礎から始める","外交と経済安全保障をつなげる","最後に評価を示す"]}</script></div>
-    <div class="slide" data-slide="2"><div class="slide-content"><div class="kicker reveal">ICEBREAKER</div><h2 class="question reveal">G7サミットには、<em>どんなイメージ</em>がありますか？</h2><div class="thoughts reveal"><span>首脳が集まる会議</span><span>会食の場？</span><span>1日では終わらない</span><span>時事問題で議題が変わる</span><span>なぜ日本が参加している？</span><span>いつ始まった？</span></div></div><span class="page">03</span><script type="application/json" class="slide-notes">{"title":"G7へのイメージ","script":"班で出たイメージには、首脳が集まる会議、会食の印象、そして時事問題によって話す内容が変わるというものがありました。実際には、G7は食事の場だけではなく、国際社会の重要課題に対して各国が方向性をすり合わせる会議です。ここから、その仕組みを確認します。","notes":["班で出た率直なイメージ","G7は首脳会合である","重要課題の方向性をすり合わせる"]}</script></div>
-    <div class="slide" data-slide="3"><div class="slide-content members"><div class="reveal"><div class="kicker">THE FRAME</div><h2 class="slide-title">G7は、主要国が<br>課題を協議する場</h2><p class="lead">日本・米国・英国・フランス・ドイツ・イタリア・カナダの首脳に、EU代表が加わります。</p></div><div class="reveal"><div class="country-grid"><div class="country"><img class="flag" src="assets/flags/jp.svg" alt="日本の国旗"><span>日本</span></div><div class="country"><img class="flag" src="assets/flags/us.svg" alt="アメリカの国旗"><span>米国</span></div><div class="country"><img class="flag" src="assets/flags/gb.svg" alt="英国の国旗"><span>英国</span></div><div class="country"><img class="flag" src="assets/flags/fr.svg" alt="フランスの国旗"><span>仏国</span></div><div class="country"><img class="flag" src="assets/flags/de.svg" alt="ドイツの国旗"><span>独国</span></div><div class="country"><img class="flag" src="assets/flags/it.svg" alt="イタリアの国旗"><span>伊国</span></div><div class="country"><img class="flag" src="assets/flags/ca.svg" alt="カナダの国旗"><span>加国</span></div><div class="country"><img class="flag" src="assets/flags/eu.svg" alt="欧州連合の旗"><span>EU</span></div></div><div class="timeline"><div class="time"><b>1</b><strong>首脳が集まる</strong><span>議長国が開催</span></div><div class="time"><b>2</b><strong>重要課題を議論</strong><span>安全保障・経済・地球規模の課題</span></div><div class="time"><b>3</b><strong>成果文書を公表</strong><span>共同声明など</span></div></div></div></div><span class="page">04</span><script type="application/json" class="slide-notes">{"title":"G7の概要","script":"G7には、日本、アメリカ、イギリス、フランス、ドイツ、イタリア、カナダの7か国が参加し、EUの代表も加わります。毎年、議長国が会議を開き、世界経済や安全保障、地球規模の課題を議論します。そして会議の後には、共同声明などの成果文書を公表します。","notes":["7か国とEU代表が参加","議長国は毎年交代する","共同声明などを公表する"]}</script></div>
-    <div class="slide" data-slide="4"><div class="slide-content"><div class="kicker reveal">THIS SUMMIT</div><h2 class="slide-title reveal">安全保障・経済・AIが<br>同時に問われた</h2><div class="theme-grid reveal"><div class="theme" data-num="01">ウクライナ・中東<br>国際危機への対応</div><div class="theme" data-num="02">世界経済の安定と成長<br>経済的威圧への対処</div><div class="theme" data-num="03">エネルギーと<br>供給網の強靱化</div><div class="theme" data-num="04">AIの活用と<br>安全・信頼のルール</div></div><figure class="g7-photo"><img src="assets/g7-leaders-2022.jpg" alt="2022年ドイツ・エルマウG7サミットの首脳集合写真"></figure></div><span class="page">05</span><script type="application/json" class="slide-notes">{"title":"今回のG7の主な議題","script":"今回のG7では、ウクライナや中東をめぐる国際危機が大きなテーマになりました。同時に、世界経済の安定、重要な資源や部品の供給網、エネルギー安全保障、そしてAIのルールづくりも議論されました。安全保障、経済、先端技術を別々ではなく、つながった課題として扱った会議だったといえます。","notes":["国際危機への対応","供給網と経済的威圧","AIの安全性と信頼性"]}</script></div>
-    <div class="slide" data-slide="5"><div class="slide-content"><div class="kicker reveal">JAPAN'S POSITION</div><h2 class="slide-title reveal">日本は同盟を軸に、<br>連携の幅を広げる</h2><div class="policy reveal"><article class="policy-card"><h3>日米同盟を基軸に</h3><ul><li>欧州やASEANとも対話を広げる</li><li>G7の結束と国際秩序を重視する</li><li>対話と抑止を両立させる</li></ul></article><article class="policy-card"><h3>経済安全保障を前面に</h3><ul><li>半導体・重要鉱物の供給網</li><li>エネルギーの安定供給</li><li>AI・デジタル分野の国際協力</li></ul></article></div></div><span class="page">06</span><script type="application/json" class="slide-notes">{"title":"日本の外交方針","script":"資料から読み取れる日本の方針は二つあります。一つ目は、日米同盟を外交の軸に置きつつ、欧州やASEANとも連携を広げることです。二つ目は、安全保障に加えて、エネルギーやサプライチェーンを含む経済安全保障を重視することです。中国に対しても、懸念を示しながら全面対立を避ける姿勢が見られます。","notes":["日米同盟を外交の基軸に置く","欧州・ASEANとの連携を広げる","経済安全保障を重視する"]}</script></div>
-    <div class="slide" data-slide="6"><div class="slide-content"><div class="kicker reveal">US × EUROPE</div><h2 class="slide-title reveal">方向性は近い。<br>ただし政策では対立する。</h2><div class="tension reveal"><article class="pole us"><div class="label">U.S.</div><ul><li>関税政策</li><li>ウクライナ支援の温度差</li><li>NATO負担をめぐる不満</li><li>急な政策変更</li></ul></article><div class="common"><div class="ring">共通する<br>方向性</div>民主主義<br>安全保障<br>対ロシア・対中国<br>AIルール</div><article class="pole eu"><div class="label">EUROPE</div><ul><li>同盟関係への懸念</li><li>貿易政策への反発</li><li>安全保障負担の議論</li><li>政策の予見可能性</li></ul></article></div></div><span class="page">07</span><script type="application/json" class="slide-notes">{"title":"アメリカと欧州の対立","script":"アメリカと欧州は、民主主義や安全保障、ロシアや中国への対応、AIのルールづくりなどで方向性を共有しています。しかし、関税、ウクライナ支援、NATOの負担、政策変更の速さなど、具体的な政策では対立があります。日本にとっては、共通点を確認しながら、対立が日米関係に与える影響を見極める必要があります。","notes":["大枠の方向性は共有する","具体的な政策で対立する","日本は影響を注視する"]}</script></div>
-    <div class="slide" data-slide="7"><div class="slide-content"><div class="kicker reveal">BRIDGE BUILDING</div><h2 class="slide-title reveal">日本は橋渡しを<br>試みた</h2><div class="bridge reveal"><div class="bridge-node">米国</div><div class="bridge-line"></div><div class="bridge-node">欧州</div><div></div><div class="bridge-node jp">日本</div><div></div></div><p class="caption reveal">G7直前にイタリア・英国と会談し、認識のすり合わせを実施。<br><span class="strong">ただし、根本にある考え方の違いは大きく、具体的な成果は限定的でした。</span></p></div><span class="page">08</span><script type="application/json" class="slide-notes">{"title":"橋渡しに向けた動き","script":"日本は、アメリカと欧州の橋渡し役を担おうとしていました。G7の直前にはイタリアやイギリスと会談し、互いの認識をすり合わせています。ただ、アメリカと欧州の間には政策や考え方の違いが多く、会談だけで大きな進展を生み出すのは難しかったと考えられます。","notes":["イタリア・英国と会談した","認識のすり合わせを行った","根本的な溝は残った"]}</script></div>
-    <div class="slide" data-slide="8"><div class="slide-content"><div class="kicker reveal">HOW JAPAN WAS SEEN</div><h2 class="slide-title reveal">日本への評価は、<br>立場によって分かれた</h2><div class="perception reveal"><article class="view positive"><span class="source">AP / The National</span><h3>欧州と歩調を合わせる<br>安定した参加国</h3><p>G7の結束を支える存在として受け止められる。</p></article><article class="view positive"><span class="source">AP / The National</span><h3>実務的な提案の<br>担い手</h3><p>重要鉱物の共同備蓄などを提案するプレーヤー。</p></article><article class="view critical"><span class="source">Global Times</span><h3>対中包囲を進める<br>動きへの批判</h3><p>供給網強化を中国に対する包囲と見る評価もある。</p></article><article class="view"><span class="source">Global Times ほか</span><h3>首脳間の橋渡し役に<br>なり得る</h3><p>日本の対話姿勢を前向きに見る見方も示された。</p></article></div></div><span class="page">09</span><script type="application/json" class="slide-notes">{"title":"海外から見た日本","script":"海外報道を整理すると、日本への見方は一つではありません。欧州と歩調を合わせる安定した参加国、重要鉱物の共同備蓄などを提案する実務的なプレーヤーという評価があります。一方、中国側からは対中包囲の試みとして批判的に見られています。日本の行動は注目され、その意味づけが立場によって分かれています。","notes":["安定した参加国という評価","実務提案の担い手という評価","対中包囲という批判もある"]}</script></div>
-    <div class="slide" data-slide="9"><div class="slide-content"><div class="kicker reveal">ENERGY SECURITY</div><h2 class="slide-title reveal">安定供給は、<br>3つの要素で決まる</h2><div class="supply reveal"><article class="supply-card"><div class="num">01</div><h3>供給源</h3><p>特定地域への依存を下げ、調達先を多様化する。</p></article><article class="supply-card"><div class="num">02</div><h3>供給経路</h3><p>ホルムズ海峡など、海上輸送路の安全を確保する。</p></article><article class="supply-card"><div class="num">03</div><h3>備え</h3><p>石油備蓄と国際協力で、危機への対応力を高める。</p></article></div></div><span class="page">10</span><script type="application/json" class="slide-notes">{"title":"エネルギー安全保障の全体像","script":"エネルギー安全保障を考えるとき、見るべき点は三つあります。第一に、どこから調達するかという供給源です。第二に、資源を安全に運べるかという供給経路です。第三に、危機が起きたときの備えです。今回の日本の発言は、この三つを一体として強くすることを目指したものだと整理できます。","notes":["供給源を多様化する","輸送路を安全に保つ","備蓄と協力で備える"]}</script></div>
-    <div class="slide" data-slide="10"><div class="slide-content policy"><div class="reveal"><div class="kicker">SUPPLY SOURCES</div><h2 class="slide-title">一つの地域への依存は、<br>危機を増幅させる</h2><p class="lead">中東情勢の悪化は、原油価格の高騰や供給不安を通じ、日本の経済と産業に影響します。</p></div><article class="policy-card reveal"><h3>目指す方向</h3><ul><li>調達先を多様化・分散する</li><li>資源国との協力関係を強める</li><li>重要鉱物の供給網も強化する</li><li>長期的に安定した体制をつくる</li></ul></article><figure class="supply-photo"><img src="assets/container-ship.jpg" alt="海上を航行するコンテナ船"></figure></div><span class="page">11</span><script type="application/json" class="slide-notes">{"title":"供給源への依存","script":"日本は原油の多くを中東地域から輸入しているため、地域の情勢悪化や国際紛争が起きると、価格高騰や供給不足が国内経済や産業に大きく影響する可能性があります。そこで、調達先を一つに集中させず、多様化して分散することが重要になります。資源国との協力関係を強め、長期的な安定供給を目指す考えです。","notes":["中東への依存にはリスクがある","調達先を多様化する","資源国との協力を強める"]}</script></div>
-    <div class="slide" data-slide="11"><div class="slide-content"><div class="kicker reveal">SEA LANES</div><h2 class="slide-title reveal">資源を確保するだけでは、<br>十分ではない</h2><div class="route reveal"><div class="route-point">供給地</div><div class="sea"><img src="assets/strait-of-hormuz.svg" alt="ホルムズ海峡の地図"><span class="ship">⛴</span></div><div class="route-point end">日本</div></div><p class="caption reveal">ホルムズ海峡などのシーレーンで紛争や封鎖が起きれば、供給に深刻な影響が出ます。<br><span class="strong">G7で連携し、自由で開かれた海上交通を維持することが課題です。</span></p></div><span class="page">12</span><script type="application/json" class="slide-notes">{"title":"供給経路の確保","script":"エネルギーを安定して利用するためには、資源を確保するだけでなく、安全に日本まで運ぶ輸送ルートを守ることが必要です。日本へ輸入される原油の多くは、ホルムズ海峡などの重要な海上輸送路を通ります。ここで紛争や封鎖が起きれば供給に深刻な影響が出ます。各国が連携して航行の安全を確保することが重要です。","notes":["シーレーンは供給の生命線","紛争・封鎖は大きなリスク","海上交通の維持で連携する"]}</script></div>
-    <div class="slide" data-slide="12"><div class="slide-content reserve"><div class="gauge reveal"><span>備える</span></div><div class="reveal"><div class="kicker">RESERVES</div><h2 class="slide-title">平時の備えが、<br>危機への対応力になる</h2><ul class="checklist"><li>石油備蓄体制を充実させる</li><li>必要に応じた協調放出に備える</li><li>調達先と輸送ルートを多様化する</li><li>重要物資を含む供給網を強靱化する</li></ul></div></div><span class="page">13</span><script type="application/json" class="slide-notes">{"title":"石油備蓄とエネルギー安全保障","script":"最後に、石油備蓄と平時からの備えです。国際情勢が不安定になったときに備え、石油備蓄体制を充実させ、必要なら協調放出を含む措置を取れるようにしておくことが重要です。さらに、調達先や輸送ルートを多様化し、重要物資を含むサプライチェーンを強くすることで、変化に対応できる持続的な供給体制を目指します。","notes":["平時から危機に備える","石油備蓄を充実させる","供給網全体を強くする"]}</script></div>
-    <div class="slide" data-slide="13"><div class="slide-content verdict"><div class="grade reveal">B<small>評 価</small></div><div class="reveal"><div class="kicker">ASSESSMENT</div><h2 class="slide-title">方針は示した。<br>成果はこれから。</h2><ul class="verdict-list"><li>日米同盟を軸とする方針を明確にした</li><li>欧州との会談を通じ、橋渡しに動いた</li><li>供給網・経済安全保障を前面に出した</li><li>一方で、米欧の対立を動かす具体的な成果は限定的だった</li></ul></div></div><span class="page">14</span><script type="application/json" class="slide-notes">{"title":"今回の動きの評価","script":"今回の動きは、及第点という評価が近いと考えます。日本は日米同盟を軸にする方針を示し、欧州との会談を通じて橋渡しにも動きました。また、経済安全保障や供給網強化という日本の優先課題を前面に出すことができました。ただし、アメリカと欧州の対立を具体的に前進させる成果は限定的で、今後の継続した取り組みが必要です。","notes":["方針と行動は示した","経済安全保障を発信した","具体的成果は限定的だった"]}</script></div>
-    <div class="slide" data-slide="14"><div class="slide-content"><div class="kicker reveal">SOURCES</div><h2 class="slide-title reveal">出典</h2><div class="sources reveal"><p><a href="https://www.mofa.go.jp/mofaj/gaiko/summit/ise-shima16/summit/about.html">外務省｜G7サミットについて</a></p><p>G7エヴィアン・サミット成果文書｜在日フランス大使館</p><p><a href="https://apnews.com/article/trump-nato-defense-spending-remarks">AP｜NATOの防衛費をめぐる発言</a></p><p><a href="https://www.nytimes.com/2019/08/21/world/europe/trump-greenland-denmark.html">The New York Times｜グリーンランドをめぐる発言</a></p><p><a href="https://ustr.gov/about-us/policy-offices/press-office/press-releases/2018/june/ustr-announces-steel-and-aluminum-tariffs">USTR｜鉄鋼・アルミニウム関税</a></p><p><a href="https://ec.europa.eu/commission/presscorner/detail/en/IP_18_4220">European Commission｜EUの反応</a></p><p>朝日新聞｜G7の石油備蓄協調放出、対米投資・関税をめぐる報道</p><p>AP / The National / Global Times｜海外から見た日本の評価</p><p><a href="https://www.kantei.go.jp/jp/105/statement/2026/0617naigai.html">首相官邸｜内外記者会見</a></p><p>画像：国旗 <a href="https://flagcdn.com/">FlagCDN</a> ／ G7首脳写真：首相官邸（<a href="https://commons.wikimedia.org/wiki/File:Group_photo_of_the_G7_members_at_the_Scholss_Elmau_summit_(2).jpg">CC BY 4.0</a>）</p><p>画像：ホルムズ海峡地図：Goran_tek-en（<a href="https://commons.wikimedia.org/wiki/File:Strait_of_Hormuz-svg-en.svg">CC BY-SA 4.0</a>）／コンテナ船：Prajna Prabhu（<a href="https://commons.wikimedia.org/wiki/File:Container_ship_on_water.jpg">CC BY-SA 4.0</a>）</p></div></div><span class="page">15</span><script type="application/json" class="slide-notes">{"title":"出典","script":"ここに挙げたのが、今回の資料作成で参照した主な出典です。G7の基本的な仕組みは外務省の資料を、アメリカと欧州の関係は各報道機関や公的発表を参照しています。海外報道の評価は、媒体ごとに立場が異なるため、一つの見方に決めつけずに整理しました。画像はライセンスを確認した上で、出典とともに掲載しています。","notes":["主な参照先を示す","画像の出典とライセンスを記載した","評価は媒体の立場で異なる"]}</script></div>
-  </main>
-  <script>
-    const slides=[...document.querySelectorAll('.slide')];let current=0;const progress=document.getElementById('progress'),nav=document.getElementById('slideNav');
-    slides.forEach((_,i)=>{const b=document.createElement('button');b.setAttribute('aria-label',`${i+1}枚目`);b.onclick=()=>goTo(i);nav.appendChild(b)});
-    function showNotes(i){const note=JSON.parse(slides[i].querySelector('.slide-notes').textContent);console.group(`🎤 ${i+1}/${slides.length} ${note.title}`);console.log(note.script);console.table(note.notes);console.groupEnd()}
-    function goTo(index){if(index<0||index>=slides.length||index===current)return;slides[current].classList.remove('active');current=index;slides[current].classList.add('active');progress.style.width=`${(current+1)/slides.length*100}%`;[...nav.children].forEach((b,i)=>b.classList.toggle('active',i===current));location.hash=`/${current+1}`;showNotes(current)}
-    function next(){goTo(current+1)}function prev(){goTo(current-1)}
-    document.addEventListener('keydown',e=>{if(['ArrowRight',' ','PageDown'].includes(e.key)){e.preventDefault();next()}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();prev()}if(e.key==='Home')goTo(0);if(e.key==='End')goTo(slides.length-1)});
-    let x=0;document.addEventListener('touchstart',e=>x=e.touches[0].clientX,{passive:true});document.addEventListener('touchend',e=>{const d=x-e.changedTouches[0].clientX;if(Math.abs(d)>50)d>0?next():prev()},{passive:true});
-    let wheel=false;document.addEventListener('wheel',e=>{if(wheel)return;wheel=true;e.deltaY>0?next():prev();setTimeout(()=>wheel=false,650)},{passive:true});
-    const start=Number(location.hash.slice(2))-1;if(Number.isInteger(start)&&start>0&&start<slides.length){slides[0].classList.remove('active');current=start;slides[current].classList.add('active')}progress.style.width=`${(current+1)/slides.length*100}%`;[...nav.children][current].classList.add('active');showNotes(current);
-  </script>
-</body></html>
+<div id="stage">
+  <div id="deck">
+
+    <section class="slide s1" data-notes="導入。今回はG7そのものの説明だけでなく、今回の日本外交をどう評価するかが中心。画像：外務省掲載、内閣広報室提供のG7集合写真。">
+      <div class="photo hero-photo"><img src="assets/hero.jpg" alt="G7首脳集合写真"></div>
+      <div class="hero-copy">
+        <div class="kicker intro-a">G7 ÉVIAN 2026</div>
+        <h1 class="intro-b">G7</h1>
+        <div class="question intro-b">高市外交、<br>どう見る？</div>
+        <p class="sub intro-c">米欧のずれと、エネルギー・重要鉱物の供給網から見ていく</p>
+        <div class="hero-tags intro-d"><span class="pill">2026年6月</span><span class="pill">フランス・エビアン</span></div>
+      </div>
+    </section>
+
+    <section class="slide s2" data-notes="班で出た「お偉いさんの会食」という印象を否定から入らず、首脳間の調整の場として説明する。">
+      <div class="layout">
+        <div class="copy">
+          <div class="kicker">WHAT IS G7?</div>
+          <h2>G7は、<br>何をする場？</h2>
+          <p>主要国の首脳が、短期間で<br>方向をそろえる場。</p>
+          <div class="point-stack">
+            <div class="card point reveal from-left dim-on-progress" data-step="1"><span class="n">1</span>法律で命令する組織ではない</div>
+            <div class="card point reveal from-left dim-on-progress" data-step="2"><span class="n">2</span>首脳が直接、考えをすり合わせる</div>
+            <div class="card point reveal from-left dim-on-progress" data-step="3"><span class="n">3</span>共同声明で世界の流れをつくる</div>
+          </div>
+        </div>
+        <div class="photo round-photo"><img src="assets/roundtable.jpg" alt="G7円卓会合"></div>
+      </div>
+      <div class="orbit"></div>
+      <div class="connector"></div>
+    </section>
+
+    <section class="slide s3" data-notes="議題を全部並べると発表が散るため、4つに整理。中東と供給網が後半につながる。">
+      <div class="photo bg-photo"><img src="assets/leaders.jpg" alt="G7会場の首脳"></div>
+      <div class="layout">
+        <div class="kicker">FOUR FOCUSES</div>
+        <h2>今回、何が重かった？</h2>
+        <p>細かい議題は多い。<br>発表では、この4つに絞る。</p>
+        <div class="agenda">
+          <div class="card agenda-item reveal pop dim-on-progress" data-step="1"><span class="dot"></span>ウクライナ</div>
+          <div class="card agenda-item reveal pop dim-on-progress" data-step="2"><span class="dot"></span>中東・ホルムズ海峡</div>
+          <div class="card agenda-item reveal pop dim-on-progress" data-step="3"><span class="dot"></span>世界経済・供給網</div>
+          <div class="card agenda-item reveal pop dim-on-progress" data-step="4"><span class="dot"></span>AIとデジタル</div>
+        </div>
+      </div>
+      <div class="focus-caption reveal from-right" data-step="4">後半は「供給網」に注目</div>
+    </section>
+
+    <section class="slide s4" data-notes="英国・イタリアとの事前会談、フランス・EUとの接触を『橋渡し』の前提として見せる。">
+      <div class="layout">
+        <div class="head">
+          <div>
+            <div class="kicker">JAPAN'S AIM</div>
+            <h2>日本は、どこを狙った？</h2>
+          </div>
+          <p>同盟を土台にしながら、<br>欧州との連携を広げる。</p>
+        </div>
+        <div class="triptych">
+          <div class="leader reveal from-left" data-step="1"><img src="assets/uk.jpg" alt="日英首脳会談"><div class="who">英国<small>連携の土台を広げる</small></div></div>
+          <div class="leader reveal pop" data-step="2"><img src="assets/italy.jpg" alt="日伊首脳会談"><div class="who">イタリア・EU<small>欧州側との接点</small></div></div>
+          <div class="leader reveal from-right" data-step="3"><img src="assets/france.jpg" alt="日仏首脳会談"><div class="who">フランス<small>議長国との調整</small></div></div>
+          <div class="bridge"></div>
+          <div class="thesis">日米同盟 × 欧州連携 × 経済安全保障</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide s5" data-notes="価値観の一致と手段のずれを見せる。関税や防衛負担など、政策手段でずれが出る点に絞る。">
+      <div class="storm"><img src="assets/divide.jpg" alt="対立を表す稲妻"></div>
+      <div class="title"><div class="kicker" style="color:#8ed8ff">US AND EUROPE</div><h2>同じ方向でも、<br>やり方は違う</h2><p>民主主義・安全保障では重なる。違うのは「進め方」。</p></div>
+      <div class="side usa-side reveal from-left" data-step="1">
+        <h3>米国</h3>
+        <div class="bigline">即効性と<br>取引を重視</div>
+        <div class="detail">関税や防衛負担を、交渉材料として前面に出しやすい。</div>
+      </div>
+      <div class="side eu-side reveal from-right" data-step="2">
+        <h3>欧州</h3>
+        <div class="bigline">制度と<br>継続性を重視</div>
+        <div class="detail">ルールや多国間の枠組みを通じて、長く続く合意を目指す。</div>
+      </div>
+      <div class="vs" data-step="3">≠</div>
+      <div class="same" data-step="3">目標は近い。でも、手段にはずれがある。</div>
+    </section>
+
+    <section class="slide s6" data-notes="双方と接触したことを視覚的に見せる。接触範囲は評価できるが、仲裁の決着とは分けて説明する。">
+      <div class="layout">
+        <div class="left">
+          <div class="kicker">BRIDGE ROLE?</div>
+          <h2>つなぐ役は、<br>できた？</h2>
+          <p>短期間で米国・欧州側の双方と接触。<br>ただし、接触と仲裁は同じではない。</p>
+          <div class="photo pm-photo"><img src="assets/pm.jpg" alt="日本の首相による会見"></div>
+        </div>
+        <div class="network">
+          <svg class="routes" viewBox="0 0 970 932" aria-hidden="true">
+            <path class="route us" d="M40 540 C170 430, 190 340, 255 250"/>
+            <path class="route eu" d="M40 540 C360 410, 620 330, 755 250"/>
+            <path class="route g7" d="M40 540 C260 650, 440 715, 495 770"/>
+          </svg>
+          <div class="node node-us reveal pop" data-step="1"><img src="assets/usa.jpg" alt="米国大統領"><div class="node-label">米国</div></div>
+          <div class="node node-eu reveal pop" data-step="2"><img src="assets/france.jpg" alt="フランス大統領との会談"><div class="node-label">欧州</div></div>
+          <div class="node node-g7 reveal pop" data-step="3"><img src="assets/roundtable.jpg" alt="G7会合"><div class="node-label">G7全体</div></div>
+          <div class="verdict">接触範囲は広い。<br><span class="red">でも、仲裁の決着はまだ。</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide s7" data-notes="2023年度の原油輸入の中東依存度は94.7%。供給源と輸送経路の二重依存として説明する。">
+      <div class="layout">
+        <div class="photo sea"><img src="assets/tanker.jpg" alt="ホルムズ海峡を航行するタンカー"></div>
+        <div class="panel">
+          <div class="kicker">ENERGY SECURITY</div>
+          <h2>日本の弱点は、<br>供給源と通り道</h2>
+          <p>中東への依存に加えて、<br>運ぶルートにもリスクがある。</p>
+          <div class="stat-row reveal pop" data-step="1"><div class="stat"><span data-count="94.7">0.0</span>%</div><div class="stat-unit">原油の中東依存</div></div>
+          <div class="meter reveal wipe" data-step="1"><div class="meter-fill"></div></div>
+          <div class="card route-box reveal from-right" data-step="2">
+            <div class="route-title">供給ルートの「細い首」</div>
+            <div class="route"><div class="route-line"></div><div class="strait"><div class="strait-label">ホルムズ海峡</div></div><div class="route-line"></div></div>
+          </div>
+          <div class="impact reveal" data-step="3"><span class="impact-item">燃料</span><span class="arrow">→</span><span class="impact-item">物流</span><span class="arrow">→</span><span class="impact-item">生活</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide s8" data-notes="G7重要鉱物サプライチェーン宣言の内容を、備蓄・追跡・共同警戒・投資・再利用に整理して説明する。">
+      <div class="photo mine"><img src="assets/mine.jpg" alt="重要鉱物の採掘現場"></div>
+      <div class="copy"><div class="kicker" style="color:#a8ddff">CRITICAL MINERALS</div><h2>備蓄だけでは足りない</h2><p>採掘・精製・流通。どこか一つが詰まると、全体が止まりやすい。</p></div>
+      <div class="chain-card">
+        <div class="chain reveal" data-step="1">
+          <div class="stage-node"><i></i>採掘</div>
+          <div class="stage-node"><i></i>精製</div>
+          <div class="stage-node"><i></i>流通</div>
+          <div class="stage-node"><i></i>利用</div>
+          <div class="bottleneck"></div>
+        </div>
+        <div class="measures">
+          <div class="measure reveal from-left" data-step="2"><b>見える化と早期対応</b><br>備蓄・追跡・共同警戒</div>
+          <div class="measure reveal from-right" data-step="3"><b>供給先を増やす</b><br>投資・再利用</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide s9" data-notes="海外報道は一枚岩ではない。評価の違いを、立場の違いとして扱う。">
+      <div class="layout">
+        <div class="left">
+          <div class="kicker">THREE LENSES</div>
+          <h2>評価は、<br>見る立場で変わる</h2>
+          <p>同じ会議でも、<br>何を重視するかで見え方が違う。</p>
+          <div class="photo group-photo"><img src="assets/hero.jpg" alt="G7首脳集合写真"></div>
+        </div>
+        <div class="lenses">
+          <div class="card lens reveal from-right dim-on-progress" data-step="1"><span class="lens-dot"></span><div class="label">前向きな見方</div><div class="claim">日本は橋渡し役を担った</div></div>
+          <div class="card lens reveal from-right dim-on-progress" data-step="2"><span class="lens-dot"></span><div class="label">批判的な見方</div><div class="claim">対中包囲の一部では？</div></div>
+          <div class="card lens reveal from-right dim-on-progress" data-step="3"><span class="lens-dot"></span><div class="label">公式成果</div><div class="claim">供給網の具体策が前進</div></div>
+        </div>
+      </div>
+      <div class="question" data-step="4">「誰の立場から見るか」も確認する</div>
+    </section>
+
+    <section class="slide s10" data-notes="最終評価。『成功寄りの及第点』。理由は、議題設定と成果接続はできたが、米欧対立の解消までは見えないため。">
+      <div class="layout">
+        <div class="panel">
+          <div class="kicker">FINAL VIEW</div>
+          <h2>高市外交、<br>どう評価する？</h2>
+          <p>先に根拠を見てから、最後に結論を出す。</p>
+          <div class="evidence">
+            <div class="card evidence-card reveal from-left dim-on-progress" data-step="1">存在感は上がった</div>
+            <div class="card evidence-card reveal from-left dim-on-progress" data-step="2">経済安全保障を前に出せた</div>
+            <div class="card evidence-card reveal from-left dim-on-progress" data-step="3">ただし、仲裁成果は限定的</div>
+          </div>
+          <div class="balance reveal" data-step="4">
+            <div class="track"><div class="needle"></div></div>
+            <div class="scale-labels"><span>課題が大きい</span><span>成果が大きい</span></div>
+          </div>
+          <div class="final-verdict">成功寄りの及第点</div>
+        </div>
+        <div class="photo leaders-photo"><img src="assets/leaders.jpg" alt="日本・フランス・EUの首脳"></div>
+      </div>
+    </section>
+
+    <section class="slide s11" data-notes="質疑用。発表中に細かいURLは読ませない。必要なら発表者ノートで確認。">
+      <div class="layout">
+        <div class="left">
+          <div class="kicker">SOURCES</div>
+          <h2>主に見た資料</h2>
+          <p>細かいURLは投影せず、<br>資料の種類だけを示す。</p>
+          <div class="photo source-photo"><img src="assets/roundtable.jpg" alt="G7円卓会合"></div>
+        </div>
+        <div class="sources">
+          <div class="card source"><div class="kind">政府発表</div><div class="name">外務省<br>G7関連ページ</div></div>
+          <div class="card source"><div class="kind">共同文書</div><div class="name">G7重要鉱物<br>サプライチェーン宣言</div></div>
+          <div class="card source"><div class="kind">統計・解説</div><div class="name">資源エネルギー庁<br>資料</div></div>
+          <div class="card source"><div class="kind">海外報道</div><div class="name">Reuters / SCMP<br>Global Times</div></div>
+        </div>
+      </div>
+      <div class="thanks">ご清聴ありがとうございました</div>
+    </section>
+
+  </div>
+</div>
+<div id="progress"></div>
+<div id="notes"><b>発表者ノート</b><div id="noteText"></div></div>
+<div id="clickShield" aria-label="クリックで進む"></div>
+<script>
+(()=>{
+  const deck=document.getElementById('deck');
+  const slides=[...document.querySelectorAll('.slide')];
+  const progress=document.getElementById('progress');
+  const notes=document.getElementById('notes');
+  const noteText=document.getElementById('noteText');
+  const shield=document.getElementById('clickShield');
+  let index=Math.max(0,Math.min(slides.length-1,Number(new URLSearchParams(location.search).get('slide')||1)-1));
+  let step=Math.max(0,Number(new URLSearchParams(location.search).get('step')||0));
+  const maxStep=s=>Math.max(0,...[...s.querySelectorAll('[data-step]')].map(x=>Number(x.dataset.step)||0));
+
+  function fit(){
+    const scale=Math.min(innerWidth/1920,innerHeight/1080);
+    deck.style.setProperty('--deck-scale',scale);
+  }
+  function updateReveals(slide){
+    const els=[...slide.querySelectorAll('[data-step]')];
+    els.forEach(el=>el.classList.toggle('shown',Number(el.dataset.step)<=step));
+    slide.classList.toggle('has-progress',step>0);
+    slide.className=slide.className.replace(/\bstep-\d+\b/g,'').replace(/\s+/g,' ').trim();
+    for(let i=1;i<=step;i++) slide.classList.add(`step-${i}`);
+    const shown=els.filter(el=>Number(el.dataset.step)<=step);
+    slide.querySelectorAll('.last-shown').forEach(el=>el.classList.remove('last-shown'));
+    if(shown.length) shown.filter(el=>Number(el.dataset.step)===step).forEach(el=>el.classList.add('last-shown'));
+    shown.forEach(el=>{
+      const counter=el.querySelector('[data-count]');
+      if(counter && !counter.dataset.ran){counter.dataset.ran='1';countUp(counter,Number(counter.dataset.count));}
+    });
+  }
+  function countUp(el,target){
+    const start=performance.now(),dur=1050;
+    const tick=t=>{
+      const p=Math.min(1,(t-start)/dur),e=1-Math.pow(1-p,3);
+      el.textContent=(target*e).toFixed(1);
+      if(p<1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }
+  function render(){
+    slides.forEach((s,i)=>{
+      s.classList.toggle('active',i===index);
+      s.classList.toggle('past',i<index);
+      if(i!==index){s.className=s.className.replace(/\bstep-\d+\b/g,'').replace(/\s+/g,' ').trim();}
+    });
+    updateReveals(slides[index]);
+    noteText.textContent=slides[index].dataset.notes||'';
+    const totalUnits=slides.reduce((sum,s)=>sum+Math.max(1,maxStep(s)+1),0);
+    let done=0;
+    for(let i=0;i<index;i++) done+=Math.max(1,maxStep(slides[i])+1);
+    done+=Math.min(step+1,Math.max(1,maxStep(slides[index])+1));
+    progress.style.width=`${done/totalUnits*100}%`;
+    history.replaceState(null,'',`${location.pathname}?slide=${index+1}`);
+  }
+  function next(){
+    const m=maxStep(slides[index]);
+    if(step<m){step++;render();return;}
+    if(index<slides.length-1){index++;step=0;render();}
+  }
+  function prev(){
+    if(step>0){step--;render();return;}
+    if(index>0){index--;step=maxStep(slides[index]);render();}
+  }
+  addEventListener('resize',fit);
+  addEventListener('keydown',e=>{
+    if(['ArrowRight',' ','PageDown','Enter'].includes(e.key)){e.preventDefault();next();}
+    else if(['ArrowLeft','PageUp','Backspace'].includes(e.key)){e.preventDefault();prev();}
+    else if(e.key.toLowerCase()==='n'){notes.classList.toggle('show');}
+    else if(e.key==='Home'){index=0;step=0;render();}
+    else if(e.key==='End'){index=slides.length-1;step=maxStep(slides[index]);render();}
+  });
+  shield.addEventListener('click',e=>{if(e.clientX<innerWidth*.23)prev();else next();});
+  fit();render();
+})();
+</script>
+</body>
+</html>
