@@ -672,20 +672,13 @@ p{color:var(--muted);font-weight:600}
   function animateSlideChange(outgoing,incoming,direction){
     if(!canAnimate())return;
     const photo=incoming.querySelector('.photo img');
-    const motionParts=slide=>[...slide.querySelectorAll('.photo,.card,.leader,.side,.node,.chain-card,.title,.copy,.panel')].slice(0,8);
-    const outgoingParts=motionParts(outgoing);
-    const incomingParts=motionParts(incoming);
-    const travel=direction>0?1:-1;
-    gsap.killTweensOf([outgoing,incoming,photo,...outgoingParts,...incomingParts].filter(Boolean));
-    const tl=gsap.timeline({defaults:{ease:'power3.inOut'}});
-    tl.set([outgoing,incoming],{transformPerspective:1800,transformStyle:'preserve-3d'})
-      .set(incoming,{zIndex:4,transformOrigin:travel>0?'right center':'left center'})
-      .fromTo(incoming,{autoAlpha:0,rotationY:travel*72,x:travel*180,z:-360,scale:.93},{autoAlpha:1,rotationY:0,x:0,z:0,scale:1,duration:.76,ease:'power4.out'})
-      .to(outgoing,{autoAlpha:0,rotationY:-travel*54,x:-travel*150,z:-260,scale:.88,duration:.62,ease:'power3.in'},0)
-      .to(outgoingParts,{autoAlpha:.28,x:i=>(i%2?1:-1)*70,y:i=>i%3*16-18,z:-160,rotationY:i=>(i%2?1:-1)*12,scale:.88,duration:.48,stagger:.025,ease:'power2.in'},0)
-      .fromTo(incomingParts,{autoAlpha:0,y:28,z:-180,rotationY:travel*14},{autoAlpha:1,y:0,z:0,rotationY:0,duration:.5,stagger:.045,ease:'power3.out'},.26);
-    if(photo)tl.fromTo(photo,{scale:1.1},{scale:1,duration:1.05,ease:'power2.out'},.08);
-    tl.set([outgoing,incoming,...outgoingParts,...incomingParts],{clearProps:'opacity,transform,clipPath,zIndex'});
+    gsap.killTweensOf([outgoing,incoming,photo].filter(Boolean));
+    const tl=gsap.timeline({defaults:{ease:'power2.inOut'}});
+    tl.set(incoming,{zIndex:4})
+      .to(outgoing,{autoAlpha:0,duration:.34})
+      .fromTo(incoming,{autoAlpha:0},{autoAlpha:1,duration:.44},.18);
+    if(photo)tl.fromTo(photo,{scale:1.045},{scale:1,duration:.9,ease:'power2.out'},.18);
+    tl.set([outgoing,incoming],{clearProps:'opacity,transform,clipPath,zIndex'});
   }
   function animateInitial(slide){
     if(!canAnimate())return;
