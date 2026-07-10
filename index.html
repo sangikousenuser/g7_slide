@@ -361,7 +361,8 @@ html,body{background:#d8d2c7;font-family:"Hiragino Sans","Noto Sans JP",Meiryo,s
 #stage{background:#d8d2c7;perspective:2200px;overflow:hidden}
 #deck{transform-style:preserve-3d}
 .slide{transform-style:preserve-3d;backface-visibility:hidden}
-.slide{background:var(--paper)}
+.slide{background:var(--paper);transform:none;transition:opacity .22s ease}
+.slide.past{transform:none}
 .slide::before{height:8px;background:var(--blue)}
 .kicker{display:none}
 h1,h2,h3{font-weight:800;letter-spacing:-.035em}
@@ -670,15 +671,7 @@ p{color:var(--muted);font-weight:600}
     if(newly.length)gsap.fromTo(newly,{autoAlpha:0,y:22},{autoAlpha:1,y:0,duration:.42,stagger:.09,ease:'power3.out',overwrite:'auto'});
   }
   function animateSlideChange(outgoing,incoming,direction){
-    if(!canAnimate())return;
-    const photo=incoming.querySelector('.photo img');
-    gsap.killTweensOf([outgoing,incoming,photo].filter(Boolean));
-    const tl=gsap.timeline({defaults:{ease:'power2.inOut'}});
-    tl.set(incoming,{zIndex:4})
-      .to(outgoing,{autoAlpha:0,duration:.34})
-      .fromTo(incoming,{autoAlpha:0},{autoAlpha:1,duration:.44},.18);
-    if(photo)tl.fromTo(photo,{scale:1.045},{scale:1,duration:.9,ease:'power2.out'},.18);
-    tl.set([outgoing,incoming],{clearProps:'opacity,transform,clipPath,zIndex'});
+    /* Scene changes stay intentionally quiet; CSS handles the short cross-fade. */
   }
   function animateInitial(slide){
     if(!canAnimate())return;
