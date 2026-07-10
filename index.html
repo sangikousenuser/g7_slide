@@ -341,6 +341,20 @@ p{font-size:50px;line-height:1.32}
 .s11 .source .name{font-size:50px;line-height:1.18}
 .s11 .thanks{font-size:42px;color:#596a80}
 
+/* Japanese projector typography: avoid character-by-character wrapping. */
+:lang(ja){line-break:strict;overflow-wrap:normal}
+h1,h2,.question,.bigline,.claim,.source .name,.evidence-card,.measure,.route-title,.stat-unit{word-break:keep-all;overflow-wrap:normal}
+.detail{word-break:normal;overflow-wrap:normal}
+
+/* Keep the US / Europe framing copy clear of the comparison panels. */
+.s5 .side{top:370px}
+.s5 .vs{top:610px}
+.s5 .same{bottom:54px}
+
+/* Complete the energy-dependency graphic with the complementary share. */
+.s7 .meter-caption{display:flex;justify-content:space-between;align-items:center;margin-top:12px;font-size:32px;font-weight:900;color:#7d8ba0}
+.s7 .meter-caption strong{color:var(--red);font-size:35px}
+
 </style>
 </head>
 <body>
@@ -459,6 +473,7 @@ p{font-size:50px;line-height:1.32}
           <p>中東への依存に加えて、<br>運ぶルートにもリスクがある。</p>
           <div class="stat-row reveal pop" data-step="1"><div class="stat"><span data-count="94.7">0.0</span>%</div><div class="stat-unit">原油の中東依存</div></div>
           <div class="meter reveal wipe" data-step="1"><div class="meter-fill"></div></div>
+          <div class="meter-caption reveal" data-step="1"><strong>中東 94.7%</strong><span>その他地域 5.3%</span></div>
           <div class="card route-box reveal from-right" data-step="2">
             <div class="route-title">供給ルートの「細い首」</div>
             <div class="route"><div class="route-line"></div><div class="strait"><div class="strait-label">ホルムズ海峡</div></div><div class="route-line"></div></div>
