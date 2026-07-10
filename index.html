@@ -358,7 +358,9 @@ h1,h2,.question,.bigline,.claim,.source .name,.evidence-card,.measure,.route-tit
 /* Editorial reset — flat, photographic, and deliberately non-dashboard. */
 :root{--paper:#f6f2e9;--ink:#1d1b18;--muted:#59544c;--blue:#9b3028;--cyan:#6b655b;--red:#9b3028;--green:#4d6251;--gold:#9b7a43;--line:#aaa296;--soft:#ece6da;--shadow:none}
 html,body{background:#d8d2c7;font-family:"Hiragino Sans","Noto Sans JP",Meiryo,sans-serif}
-#stage{background:#d8d2c7}
+#stage{background:#d8d2c7;perspective:2200px;overflow:hidden}
+#deck{transform-style:preserve-3d}
+.slide{transform-style:preserve-3d;backface-visibility:hidden}
 .slide{background:var(--paper)}
 .slide::before{height:8px;background:var(--blue)}
 .kicker{display:none}
@@ -376,7 +378,6 @@ p{color:var(--muted);font-weight:600}
 .reveal.shown{opacity:1;filter:none;transform:none;clip-path:none}
 .reveal.shown.focus{border-color:var(--blue);box-shadow:none}
 #progress{height:6px;background:var(--blue)}
-#motionRule{position:absolute;left:0;top:536px;width:1920px;height:8px;background:var(--blue);transform:scaleX(0);transform-origin:left center;pointer-events:none;z-index:90}
 
 /* Strip away the repeated UI motifs; leave only meaningful diagrams. */
 .s1 .hero-photo::before{background:linear-gradient(90deg,var(--paper) 0,rgba(246,242,233,.93) 15%,rgba(246,242,233,.12) 58%,transparent 78%)}
@@ -392,7 +393,7 @@ p{color:var(--muted);font-weight:600}
 .s5 .storm img{filter:grayscale(1) contrast(.92) brightness(.44)}
 .s5 .storm::after{background:rgba(0,0,0,.32)}
 .s5 .side{background:var(--paper);backdrop-filter:none}
-.s5 .vs{border-radius:50%;border:3px solid var(--paper);background:var(--blue);color:var(--paper);box-shadow:none}
+.s5 .vs{display:none!important}
 .s6 .node{border:0;background:transparent}
 .s6 .node .node-label{border-radius:0;background:var(--paper);font-size:34px;padding:8px 12px;color:var(--ink)}
 .s6 .route{stroke-width:5}
@@ -419,7 +420,6 @@ p{color:var(--muted);font-weight:600}
 <body>
 <div id="stage">
   <div id="deck">
-    <div id="motionRule" aria-hidden="true"></div>
 
     <section class="slide s1" data-notes="導入。今回はG7そのものの説明だけでなく、今回の日本外交をどう評価するかが中心。画像：外務省掲載、内閣広報室提供のG7集合写真。">
       <div class="photo hero-photo"><img src="assets/hero.jpg" alt="G7首脳集合写真"></div>
@@ -631,7 +631,6 @@ p{color:var(--muted);font-weight:600}
   const notes=document.getElementById('notes');
   const noteText=document.getElementById('noteText');
   const shield=document.getElementById('clickShield');
-  const motionRule=document.getElementById('motionRule');
   const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
   const canAnimate=()=>!reduceMotion&&typeof window.gsap!=='undefined';
   let index=Math.max(0,Math.min(slides.length-1,Number(new URLSearchParams(location.search).get('slide')||1)-1));
@@ -672,19 +671,21 @@ p{color:var(--muted);font-weight:600}
   }
   function animateSlideChange(outgoing,incoming,direction){
     if(!canAnimate())return;
-    const origin=direction>0?'left center':'right center';
-    const travel=direction>0?110:-110;
     const photo=incoming.querySelector('.photo img');
-    gsap.killTweensOf([outgoing,incoming,motionRule,photo].filter(Boolean));
+    const motionParts=slide=>[...slide.querySelectorAll('.photo,.card,.leader,.side,.node,.chain-card,.title,.copy,.panel')].slice(0,8);
+    const outgoingParts=motionParts(outgoing);
+    const incomingParts=motionParts(incoming);
+    const travel=direction>0?1:-1;
+    gsap.killTweensOf([outgoing,incoming,photo,...outgoingParts,...incomingParts].filter(Boolean));
     const tl=gsap.timeline({defaults:{ease:'power3.inOut'}});
-    tl.set(motionRule,{transformOrigin:origin,scaleX:0})
-      .to(motionRule,{scaleX:1,duration:.22})
-      .set(incoming,{zIndex:4})
-      .fromTo(incoming,{autoAlpha:0,x:travel,scale:.992},{autoAlpha:1,x:0,scale:1,duration:.46},'<.05')
-      .to(outgoing,{autoAlpha:0,x:-travel*.42,scale:.994,duration:.36},'<');
-    if(photo)tl.fromTo(photo,{scale:1.09},{scale:1,duration:1.05,ease:'power2.out'},'<');
-    tl.to(motionRule,{scaleX:0,duration:.26,transformOrigin:direction>0?'right center':'left center'},'-=.12')
-      .set([outgoing,incoming],{clearProps:'opacity,transform,clipPath,zIndex'});
+    tl.set([outgoing,incoming],{transformPerspective:1800,transformStyle:'preserve-3d'})
+      .set(incoming,{zIndex:4,transformOrigin:travel>0?'right center':'left center'})
+      .fromTo(incoming,{autoAlpha:0,rotationY:travel*72,x:travel*180,z:-360,scale:.93},{autoAlpha:1,rotationY:0,x:0,z:0,scale:1,duration:.76,ease:'power4.out'})
+      .to(outgoing,{autoAlpha:0,rotationY:-travel*54,x:-travel*150,z:-260,scale:.88,duration:.62,ease:'power3.in'},0)
+      .to(outgoingParts,{autoAlpha:.28,x:i=>(i%2?1:-1)*70,y:i=>i%3*16-18,z:-160,rotationY:i=>(i%2?1:-1)*12,scale:.88,duration:.48,stagger:.025,ease:'power2.in'},0)
+      .fromTo(incomingParts,{autoAlpha:0,y:28,z:-180,rotationY:travel*14},{autoAlpha:1,y:0,z:0,rotationY:0,duration:.5,stagger:.045,ease:'power3.out'},.26);
+    if(photo)tl.fromTo(photo,{scale:1.1},{scale:1,duration:1.05,ease:'power2.out'},.08);
+    tl.set([outgoing,incoming,...outgoingParts,...incomingParts],{clearProps:'opacity,transform,clipPath,zIndex'});
   }
   function animateInitial(slide){
     if(!canAnimate())return;
