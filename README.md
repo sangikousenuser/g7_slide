@@ -1,13 +1,7 @@
-# G7 presentation
+# お金は、水だ。
 
-16:9 fixed-layout projector presentation rebuilt from `G7_presentation(5).html`.
+「お金＝水」「社会＝水道管」という比喩で、国家・企業・社会構造・人々の関係を説明する、16:9の投影用HTMLスライドです。
 
-## Controls
-
-- Right / Space / PageDown / Enter: next reveal or slide
-- Left / PageUp / Backspace: previous reveal or slide
-- Home / End: first / last slide
-- N: presenter notes
-- Click right side: next; click left side: previous
-
-Animations are designed to guide attention and explain relationships rather than decorate the slides. All image sources are listed in `assets/sources.json`; no image generation was used.
+- `https://g7slide.sangikousenuser.win/1` から各ページを直接開けます（`/1`〜`/8`）。
+- キーボードは `←` `→` `Space` `PageUp` `PageDown` `Home` `End` に対応しています。
+- 各スライドの話す内容は、ブラウザのコンソールに表示されます。
