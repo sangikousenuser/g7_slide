@@ -715,7 +715,24 @@ p{font-size:50px;line-height:1.32}
   function animateStep(slide){
     if(!canAnimate())return;
     const newly=[...slide.querySelectorAll('[data-step]')].filter(el=>Number(el.dataset.step)===step);
-    if(newly.length)gsap.fromTo(newly,{autoAlpha:0,y:22},{autoAlpha:1,y:0,duration:.42,stagger:.09,ease:'power3.out',overwrite:'auto'});
+    if(!newly.length)return;
+    gsap.killTweensOf(newly);
+    gsap.fromTo(newly,{
+      autoAlpha:0,
+      x:(i,el)=>el.classList.contains('from-left')?-54:el.classList.contains('from-right')?54:0,
+      y:(i,el)=>el.classList.contains('from-left')||el.classList.contains('from-right')?0:22,
+      scale:(i,el)=>el.classList.contains('pop')?.82:1
+    },{
+      autoAlpha:1,
+      x:0,
+      y:0,
+      scale:1,
+      duration:.42,
+      stagger:.09,
+      ease:'power3.out',
+      overwrite:'auto',
+      clearProps:'transform,opacity,visibility'
+    });
   }
   function animateSlideChange(outgoing,incoming,direction){
     /* Scene changes stay intentionally quiet; CSS handles the short cross-fade. */
