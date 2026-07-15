@@ -79,17 +79,23 @@ p{font-size:46px;line-height:1.38;font-weight:700;color:var(--muted)}
 @keyframes upIn{from{opacity:0;transform:translateY(34px);filter:blur(7px)}to{opacity:1;transform:none;filter:none}}
 
 /* 2 — what G7 does */
-.s2 .layout{height:100%;padding:82px 92px;display:grid;grid-template-columns:760px 1fr;gap:60px}
-.s2 .copy{display:flex;flex-direction:column;justify-content:center}
+.s2 .layout{height:100%;padding:76px 92px;display:grid;grid-template-columns:800px 1fr;gap:52px}
+.s2 .copy{display:flex;flex-direction:column;justify-content:center;padding:18px 0 10px}
+.s2 .copy h2{font-size:80px;line-height:1.08;margin-top:14px}
 .s2 .copy p{margin-top:30px}
 .s2 .round-photo{height:916px;border-radius:50%;align-self:center;aspect-ratio:1}
 .s2 .round-photo img{object-position:center}
 .s2 .orbit{position:absolute;right:150px;top:108px;width:790px;height:790px;border-radius:50%;border:4px solid rgba(23,103,216,.10);pointer-events:none}
 .s2 .orbit::before,.s2 .orbit::after{content:"";position:absolute;border-radius:50%;inset:70px;border:3px dashed rgba(23,103,216,.14)}
 .s2 .orbit::after{inset:150px;border-style:solid}
-.s2 .point-stack{display:grid;gap:20px;margin-top:46px}
-.s2 .point{position:relative;padding:24px 28px 24px 94px;min-height:92px;display:flex;align-items:center;font-size:41px;line-height:1.18;font-weight:900}
-.s2 .point .n{position:absolute;left:22px;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;font-size:30px}
+.s2 .point-stack{display:grid;gap:16px;margin-top:34px;position:relative}
+.s2 .point-stack::before{content:"";position:absolute;left:56px;top:70px;bottom:70px;width:5px;border-radius:999px;background:linear-gradient(var(--blue),var(--cyan),var(--green));opacity:.18}
+.s2 .point{position:relative;padding:20px 28px 20px 116px;min-height:104px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;font-size:41px;line-height:1.18;font-weight:900;box-shadow:0 12px 30px rgba(19,46,85,.08)}
+.s2 .point .n{position:absolute;left:24px;width:66px;height:66px;border-radius:22px;display:grid;place-items:center;background:var(--blue);color:#fff;font-size:30px;z-index:2}
+.s2 .point-label{font-size:27px;line-height:1;font-weight:950;letter-spacing:.09em;color:var(--blue);margin-bottom:8px}
+.s2 .point:nth-child(2) .point-label{color:var(--cyan)}
+.s2 .point:nth-child(3) .point-label{color:var(--green)}
+.s2 .point-text{font-size:43px;line-height:1.18;font-weight:950;color:var(--ink)}
 .s2 .point:nth-child(2) .n{background:var(--cyan)}
 .s2 .point:nth-child(3) .n{background:var(--green)}
 .s2 .connector{position:absolute;left:690px;top:337px;width:140px;height:4px;background:linear-gradient(90deg,var(--blue),transparent);transform-origin:left;transform:scaleX(0);transition:transform .75s var(--ease)}
@@ -282,9 +288,9 @@ p{font-size:50px;line-height:1.32}
 .s1 .question{font-size:90px;line-height:1.05}
 .s1 .hero-tags{gap:20px}
 
-.s2 .point-stack{gap:22px;margin-top:48px}
-.s2 .point{font-size:46px;min-height:108px;padding:26px 30px 26px 108px}
-.s2 .point .n{font-size:40px;width:64px;height:64px;left:24px}
+.s2 .point-stack{gap:16px;margin-top:34px}
+.s2 .point{min-height:104px;padding:20px 30px 20px 116px}
+.s2 .point .n{font-size:0;width:66px;height:66px;left:24px}
 
 .s3 .bg-photo::before{background:linear-gradient(90deg,#fff 0,rgba(255,255,255,.96) 18%,rgba(255,255,255,.52) 58%,rgba(255,255,255,.10))}
 .s3 .layout{width:1280px}
@@ -345,7 +351,8 @@ p{font-size:50px;line-height:1.32}
 /* PPTX content-alignment and self-review polish pass 2026-07-15 */
 .slide-tag{display:inline-flex;align-items:center;gap:14px;margin-bottom:24px;padding:14px 22px;border-radius:999px;background:#eef5ff;border:3px solid #d8e7ff;color:#315b93;font-size:38px;line-height:1.15;font-weight:900}
 .slide-tag::before{content:"";width:18px;height:18px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 8px rgba(23,103,216,.10)}
-.s2 .class-voice{font-size:40px;line-height:1.28;font-weight:900;color:#6a778a;margin-bottom:22px}
+.s2 .class-voice{display:inline-flex;align-self:flex-start;align-items:center;margin:24px 0 0;padding:13px 20px;border-radius:999px;background:#eef5ff;border:3px solid #d9e7ff;font-size:35px;line-height:1.15;font-weight:900;color:#47617f}
+.s2 .class-voice::before{content:"班の出発点";margin-right:14px;padding:8px 13px;border-radius:999px;background:#fff;color:var(--blue);font-size:25px;letter-spacing:.05em}
 .s2 .point .n{font-size:0;background:#fff;border:8px solid var(--blue);box-shadow:0 0 0 6px rgba(23,103,216,.10)}
 .s2 .point:nth-child(2) .n{border-color:var(--cyan);background:#fff}
 .s2 .point:nth-child(3) .n{border-color:var(--green);background:#fff}
@@ -353,7 +360,8 @@ p{font-size:50px;line-height:1.32}
 .s2 .point:nth-child(1) .n{color:var(--blue)}
 .s2 .point:nth-child(2) .n{color:var(--cyan)}
 .s2 .point:nth-child(3) .n{color:var(--green)}
-.s2 .answer-line{margin-top:28px;padding:22px 28px;border-left:12px solid var(--blue);background:#f4f8ff;border-radius:0 24px 24px 0;font-size:42px;line-height:1.25;font-weight:950;color:#173c78}
+.s2 .answer-line{position:relative;margin-top:28px;padding:25px 28px 25px 148px;border:0;background:#173c78;border-radius:28px;box-shadow:0 16px 38px rgba(23,60,120,.20);font-size:41px;line-height:1.23;font-weight:950;color:#fff}
+.s2 .answer-line::before{content:"結論";position:absolute;left:26px;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:90px;height:58px;border-radius:18px;background:#fff;color:#173c78;font-size:29px;letter-spacing:.08em}
 .s3 .agenda-item{line-height:1.18}
 .s4 .head p{font-weight:900;color:#3d4f67}
 .s4 .thesis{bottom:44px}
@@ -450,9 +458,9 @@ p{font-size:50px;line-height:1.32}
       <h2>G7サミットは、<br>どんな場？</h2>
       <div class="class-voice">班で出たイメージから確認</div>
       <div class="point-stack">
-        <div class="card point reveal from-left dim-on-progress" data-step="1"><span class="n"></span>7か国＋EUの首脳が集まる</div>
-        <div class="card point reveal from-left dim-on-progress" data-step="2"><span class="n"></span>3日間、重要課題を直接話す</div>
-        <div class="card point reveal from-left dim-on-progress" data-step="3"><span class="n"></span>共同声明などの成果を公表する</div>
+        <div class="card point reveal from-left dim-on-progress" data-step="1"><span class="n"></span><span class="point-label">MEMBERS</span><span class="point-text">7か国＋EUの首脳が集まる</span></div>
+        <div class="card point reveal from-left dim-on-progress" data-step="2"><span class="n"></span><span class="point-label">DAYS</span><span class="point-text">3日間、重要課題を直接話す</span></div>
+        <div class="card point reveal from-left dim-on-progress" data-step="3"><span class="n"></span><span class="point-label">OUTCOME</span><span class="point-text">共同声明などの成果を公表する</span></div>
       </div>
       <div class="answer-line">会食の場というより、首脳が方向をそろえる場。</div>
     </div>
