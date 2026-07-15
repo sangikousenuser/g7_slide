@@ -56,5 +56,32 @@
       "source_file": "Mountain Pass Rare Earth Mine, Mountain Pass, California (15469739669).jpg",
       "source_page": "https://commons.wikimedia.org/wiki/File:Mountain_Pass_Rare_Earth_Mine,_Mountain_Pass,_California_(15469739669).jpg"
     }
+  ],
+  "content_sources": [
+    {
+      "title": "外務省 高市総理大臣の英国・イタリア訪問及びG7エビアン・サミット出席",
+      "url": "https://www.mofa.go.jp/mofaj/ecm/epc/pageit_000001_00011.html",
+      "used_for": "日程、各セッション、日英・日伊・日仏・日米・EUとの接触"
+    },
+    {
+      "title": "フランス大統領府 G7 Évian 2026 結果",
+      "url": "https://www.elysee.fr/G7evian/2026/06/17/les-resultats-du-g7-de-vian",
+      "used_for": "主要議題と首脳声明の全体整理"
+    },
+    {
+      "title": "G7重要鉱物サプライチェーン確保に関する首脳宣言",
+      "url": "https://www.elysee.fr/G7evian/2026/06/17/declaration-des-chefs-detat-et-de-gouvernement-du-g7-sur-la-securisation-des-chaines-dapprovisionnement-en-minerais-critiques",
+      "used_for": "備蓄、追跡、共同警戒、投資、再利用などの具体策"
+    },
+    {
+      "title": "Reuters G7 critical minerals alliance report",
+      "url": "https://www.reuters.com/world/europe/g7-sets-up-critical-minerals-alliance-crisis-platform-2026-06-17/",
+      "used_for": "重要鉱物をめぐる海外報道の確認"
+    },
+    {
+      "title": "資源エネルギー庁 エネルギー白書・石油統計",
+      "url": "https://www.enecho.meti.go.jp/about/whitepaper/",
+      "used_for": "日本の原油輸入における中東依存度（スライドでは2023年度94.7%を明記）"
+    }
   ]
 }
