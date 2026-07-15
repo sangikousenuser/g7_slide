@@ -514,6 +514,36 @@ p{font-size:50px;line-height:1.32}
 .s9 .lens:nth-child(3){border-top:7px solid var(--green)}
 .s9 .lens:nth-child(4){border-top:7px solid var(--cyan)}
 
+
+/* projector legibility and intentional line breaks 2026-07-15 */
+.s2 .point-stack{grid-auto-rows:150px}
+.s2 .point{height:150px;min-height:150px;padding-top:16px;padding-bottom:16px}
+.s2 .point-text{font-size:42px;line-height:1.16}
+.s2 .point-stack::before{top:75px;bottom:75px}
+.s4 .leader .who small{font-size:40px;line-height:1.15;margin-top:10px}
+.s5 .side .detail{font-size:46px;line-height:1.24}
+.s6 .verdict{font-size:42px;line-height:1.22;padding:18px 26px}
+.energy-reserve .reserve-card p{font-size:46px;line-height:1.24}
+.s8 .copy p{font-size:50px;line-height:1.28}
+.s9 .lens{padding-top:126px}
+.s9 .lens .source{top:40px;font-size:36px;line-height:1.1}
+.s9 .lens .claim{font-size:47px;line-height:1.18}
+.s10 .evidence{grid-auto-rows:112px;gap:16px;margin-top:24px}
+.s10 .evidence-card{font-size:44px;line-height:1.18;padding:18px 30px}
+
+
+/* final rear-seat legibility corrections */
+.s3 .agenda{grid-template-rows:repeat(2,204px)}
+.s3 .agenda-item{height:204px;min-height:204px;padding-top:26px;padding-bottom:26px}
+.s9 .lens .source{font-size:40px}
+.s9 .lens .claim{font-size:48px}
+
+
+/* wide agenda cards for clean projector line breaks */
+.s3 .agenda{grid-template-columns:1fr;grid-template-rows:repeat(4,132px);gap:14px;width:1080px;margin-top:42px}
+.s3 .agenda-item{height:132px;min-height:132px;padding:24px 26px 24px 104px;font-size:48px;line-height:1.16;letter-spacing:-.02em;white-space:nowrap}
+.s3 .agenda-item .dot{left:28px;width:50px;height:50px}
+
 </style>
 </head>
 <body>
@@ -552,9 +582,9 @@ p{font-size:50px;line-height:1.32}
     <h2>今回のG7で何が話し合われた？</h2>
     <div class="agenda">
       <div class="card agenda-item reveal pop dim-on-progress" data-step="1"><span class="dot"></span>ウクライナ・中東の国際危機への対応</div>
-      <div class="card agenda-item reveal pop dim-on-progress" data-step="2"><span class="dot"></span>世界経済の安定・成長と供給網</div>
-      <div class="card agenda-item reveal pop dim-on-progress" data-step="3"><span class="dot"></span>紛争・ホルムズ海峡</div>
-      <div class="card agenda-item reveal pop dim-on-progress" data-step="4"><span class="dot"></span>AI系などのルール</div>
+      <div class="card agenda-item reveal pop dim-on-progress" data-step="2"><span class="dot"></span>世界経済の安定・成長と供給網の強化</div>
+      <div class="card agenda-item reveal pop dim-on-progress" data-step="3"><span class="dot"></span>紛争とホルムズ海峡</div>
+      <div class="card agenda-item reveal pop dim-on-progress" data-step="4"><span class="dot"></span>AIなどのルールづくり</div>
     </div>
   </div>
   <div class="focus-overlay" data-step="5"><div class="focus-message"><span class="focus-prefix">この発表は</span><strong>「外交」と「供給網」に注目</strong></div></div>
@@ -569,9 +599,9 @@ p{font-size:50px;line-height:1.32}
       <p>日米同盟を外交の基軸に。<br>経済安全保障も重視する。</p>
     </div>
     <div class="triptych">
-      <div class="leader reveal from-left" data-step="1"><img src="assets/uk.jpg" alt="日英首脳会談"><div class="who">英国<small>G7直前に認識をすり合わせ</small></div></div>
-      <div class="leader reveal pop" data-step="2"><img src="assets/italy.jpg" alt="日伊首脳会談"><div class="who">イタリア・EU<small>欧州側との接点を増やす</small></div></div>
-      <div class="leader reveal from-right" data-step="3"><img src="assets/france.jpg" alt="日仏首脳会談"><div class="who">フランス<small>議長国とも直接調整</small></div></div>
+      <div class="leader reveal from-left" data-step="1"><img src="assets/uk.jpg" alt="日英首脳会談"><div class="who">英国<small>G7直前に<br>認識をすり合わせ</small></div></div>
+      <div class="leader reveal pop" data-step="2"><img src="assets/italy.jpg" alt="日伊首脳会談"><div class="who">イタリア・EU<small>欧州側との<br>接点を増やす</small></div></div>
+      <div class="leader reveal from-right" data-step="3"><img src="assets/france.jpg" alt="日仏首脳会談"><div class="who">フランス<small>議長国とも<br>直接調整</small></div></div>
       <div class="bridge"></div>
       <div class="thesis">日米同盟を軸に、欧州との連携も広げる</div>
     </div>
@@ -584,12 +614,12 @@ p{font-size:50px;line-height:1.32}
   <div class="side usa-side reveal from-left" data-step="1">
     <h3>米国</h3>
     <div class="bigline">関税と負担を<br>交渉材料に</div>
-    <div class="detail">対EU関税、NATOの負担、グリーンランド発言など。</div>
+    <div class="detail">対EU関税、NATOの負担、<br>グリーンランド発言など。</div>
   </div>
   <div class="side eu-side reveal from-right" data-step="2">
     <h3>欧州</h3>
     <div class="bigline">制度と<br>継続性を重視</div>
-    <div class="detail">同盟国間のルールや、多国間での合意を重視する。</div>
+    <div class="detail">同盟国間のルールや、<br>多国間での合意を重視する。</div>
   </div>
   <div class="vs" data-step="3">≠</div>
   <div class="same" data-step="3">民主主義・安全保障など、大きな方向性は近い。</div>
@@ -653,9 +683,9 @@ p{font-size:50px;line-height:1.32}
       <p>危機が起きてからでは遅い。<br>平時から備える。</p>
     </div>
     <div class="reserve-grid">
-      <div class="card reserve-card reveal from-left" data-step="1"><span class="symbol">備</span><h3>石油備蓄</h3><p>供給が止まったときに使える量を確保する。</p></div>
-      <div class="card reserve-card reveal pop" data-step="2"><span class="symbol">協</span><h3>協調放出</h3><p>必要な場合は、G7各国が連携して市場を安定させる。</p></div>
-      <div class="card reserve-card reveal from-right" data-step="3"><span class="symbol">強</span><h3>供給網強化</h3><p>調達先と輸送ルートを多様化し、長期的に備える。</p></div>
+      <div class="card reserve-card reveal from-left" data-step="1"><span class="symbol">備</span><h3>石油備蓄</h3><p>供給停止に備え、<br>使える量を確保する。</p></div>
+      <div class="card reserve-card reveal pop" data-step="2"><span class="symbol">協</span><h3>協調放出</h3><p>G7各国で連携し、<br>市場を安定させる。</p></div>
+      <div class="card reserve-card reveal from-right" data-step="3"><span class="symbol">強</span><h3>供給網強化</h3><p>調達先と輸送ルートを<br>多様化して備える。</p></div>
     </div>
   </div>
   <div class="bottom-line">持続的で安定したエネルギー供給体制へ</div>
@@ -663,7 +693,7 @@ p{font-size:50px;line-height:1.32}
 
 <section class="slide s8" data-notes="エネルギーだけでなく、半導体や電池に必要な重要鉱物も経済安全保障の課題。G7では備蓄、追跡、共同警戒、投資、再利用など、供給網全体を強くする具体策が示された。">
   <div class="photo mine"><img src="assets/mine.jpg" alt="重要鉱物の採掘現場"></div>
-  <div class="copy"><h2>重要鉱物も、同じ問題</h2><p>半導体や電池に必要な鉱物も、特定国への依存がリスクになる。</p></div>
+  <div class="copy"><h2>重要鉱物も、同じ問題</h2><p>半導体や電池に必要な鉱物も、<br>特定国への依存がリスクになる。</p></div>
   <div class="chain-card">
     <div class="chain reveal" data-step="1">
       <div class="stage-node"><i></i>採掘</div>
@@ -694,15 +724,15 @@ p{font-size:50px;line-height:1.32}
   </div>
 </section>
 
-<section class="slide s10" data-notes="最終評価は『及第点ぐらい』。方針に沿った発言と行動はあり、経済安全保障を前に出せた。一方、米欧間の橋渡しで具体的成果が見えたとは言いにくい。">
+<section class="slide s10" data-notes="最終評価は『及第点ぐらい』。方針に沿った発言と行動はあり、経済安全保障を<br>前に出せた。一方、米欧間の橋渡しで具体的成果が見えたとは言いにくい。">
   <div class="layout">
     <div class="panel">
       <h2>今回の高市さんは<br>どうだった？</h2>
       <p>成功・及第点・失敗のどれか。</p>
       <div class="evidence">
-        <div class="card evidence-card reveal from-left dim-on-progress" data-step="1">方針に沿った発言と動きはあった</div>
-        <div class="card evidence-card reveal from-left dim-on-progress" data-step="2">米欧の間で動いたが、成果は限定的</div>
-        <div class="card evidence-card reveal from-left dim-on-progress" data-step="3">経済安全保障を前に出せた</div>
+        <div class="card evidence-card reveal from-left dim-on-progress" data-step="1">方針に沿った発言と<br>動きはあった</div>
+        <div class="card evidence-card reveal from-left dim-on-progress" data-step="2">米欧の間で動いたが、<br>成果は限定的</div>
+        <div class="card evidence-card reveal from-left dim-on-progress" data-step="3">経済安全保障を<br>前に出せた</div>
       </div>
       <div class="balance reveal" data-step="4">
         <div class="track"><div class="needle"></div></div>
