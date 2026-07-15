@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>G7 Évian 2026 — 高市外交、どう見る？</title>
+<title>G7エビアン・サミット2026 — 高市さんの外交、どうだった？</title>
 <style>
 :root{
   --paper:#fff;
@@ -244,7 +244,7 @@ p{font-size:46px;line-height:1.38;font-weight:700;color:var(--muted)}
 .s10 .track{position:relative;height:34px;background:#e7edf5;border-radius:999px}
 .s10 .track::before{content:"";position:absolute;left:50%;top:-10px;width:5px;height:54px;background:#9aabc1}
 .s10 .needle{position:absolute;left:50%;top:50%;width:38px;height:38px;border-radius:50%;background:var(--blue);border:8px solid #fff;box-shadow:0 4px 16px rgba(0,0,0,.24);transform:translate(-50%,-50%);transition:left 1s var(--ease)}
-.s10.step-4 .needle{left:68%}
+.s10.step-4 .needle{left:61%}
 .s10 .scale-labels{display:flex;justify-content:space-between;margin-top:12px;font-size:32px;font-weight:900;color:#6c7b8f}
 .s10 .final-verdict{margin-top:18px;font-size:58px;line-height:1.02;font-weight:950;letter-spacing:-.04em;color:var(--blue);opacity:0;transform:translateY(24px);transition:.65s var(--ease)}
 .s10.step-4 .final-verdict{opacity:1;transform:none}
@@ -341,80 +341,90 @@ p{font-size:50px;line-height:1.32}
 .s11 .source .name{font-size:50px;line-height:1.18}
 .s11 .thanks{font-size:42px;color:#596a80}
 
-/* Japanese projector typography: avoid character-by-character wrapping. */
-:lang(ja){line-break:strict;overflow-wrap:normal}
-h1,h2,.question,.bigline,.claim,.source .name,.evidence-card,.measure,.route-title,.stat-unit{word-break:keep-all;overflow-wrap:normal}
-.detail{word-break:normal;overflow-wrap:normal}
 
-/* Keep the US / Europe framing copy clear of the comparison panels. */
-.s5 .side{top:370px}
-.s5 .vs{top:610px}
-.s5 .same{bottom:54px}
+/* PPTX content-alignment and self-review polish pass 2026-07-15 */
+.slide-tag{display:inline-flex;align-items:center;gap:14px;margin-bottom:24px;padding:14px 22px;border-radius:999px;background:#eef5ff;border:3px solid #d8e7ff;color:#315b93;font-size:38px;line-height:1.15;font-weight:900}
+.slide-tag::before{content:"";width:18px;height:18px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 8px rgba(23,103,216,.10)}
+.s2 .class-voice{font-size:40px;line-height:1.28;font-weight:900;color:#6a778a;margin-bottom:22px}
+.s2 .point .n{font-size:0;background:#fff;border:8px solid var(--blue);box-shadow:0 0 0 6px rgba(23,103,216,.10)}
+.s2 .point:nth-child(2) .n{border-color:var(--cyan);background:#fff}
+.s2 .point:nth-child(3) .n{border-color:var(--green);background:#fff}
+.s2 .point .n::after{content:"";width:18px;height:18px;border-radius:50%;background:currentColor}
+.s2 .point:nth-child(1) .n{color:var(--blue)}
+.s2 .point:nth-child(2) .n{color:var(--cyan)}
+.s2 .point:nth-child(3) .n{color:var(--green)}
+.s2 .answer-line{margin-top:28px;padding:22px 28px;border-left:12px solid var(--blue);background:#f4f8ff;border-radius:0 24px 24px 0;font-size:42px;line-height:1.25;font-weight:950;color:#173c78}
+.s3 .agenda-item{line-height:1.18}
+.s4 .head p{font-weight:900;color:#3d4f67}
+.s4 .thesis{bottom:44px}
+.s5 .side .detail{min-height:116px}
+.s6 .pm-photo{height:530px}
+.s6 .verdict{top:450px}
+.s7 .source-callout{margin-top:30px;padding:28px 32px;border-radius:28px;background:#eef6ff;border:4px solid #d8e9ff;font-size:46px;line-height:1.25;font-weight:950;color:#174b94}
+.s7 .source-callout b{color:var(--red)}
+.s7 .impact{justify-content:flex-start;gap:22px}
+.s7 .impact .arrow{margin:0 4px}
+.energy-route .layout{height:100%;display:grid;grid-template-columns:960px 1fr;background:#fff}
+.energy-route .map{height:100%;border-radius:0;box-shadow:none;background:#eaf1f8}
+.energy-route .map img{object-fit:cover;object-position:center}
+.energy-route .map::before{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,rgba(8,31,61,.02),rgba(8,31,61,.18))}
+.energy-route .panel{padding:82px 92px 72px 68px;display:flex;flex-direction:column;justify-content:center}
+.energy-route .panel p{margin-top:24px}
+.energy-route .route-points{display:grid;gap:22px;margin-top:42px}
+.energy-route .route-point{position:relative;min-height:112px;padding:28px 28px 28px 112px;display:flex;align-items:center;font-size:46px;line-height:1.18;font-weight:950;color:#173c78}
+.energy-route .route-point i{position:absolute;left:30px;width:58px;height:58px;border-radius:50%;background:#fff;border:10px solid #b9d6ff;box-shadow:0 0 0 4px var(--blue)}
+.energy-route .route-point:nth-child(2) i{border-color:#bceef5;box-shadow:0 0 0 4px var(--cyan)}
+.energy-route .route-point:nth-child(3) i{border-color:#cfeada;box-shadow:0 0 0 4px var(--green)}
+.energy-route .route-thesis{margin-top:34px;padding:24px 30px;border-radius:28px;background:#fff2f3;border:4px solid #f2c9cd;font-size:44px;line-height:1.25;font-weight:950;color:#99323d}
+.energy-reserve{background:linear-gradient(135deg,#f8fbff,#eef5ff)}
+.energy-reserve .layout{height:100%;padding:78px 92px;display:grid;grid-template-rows:auto 1fr;gap:46px}
+.energy-reserve .head{display:flex;align-items:end;justify-content:space-between}
+.energy-reserve .head p{width:700px;text-align:right;font-size:48px;line-height:1.26}
+.energy-reserve .reserve-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;align-items:stretch}
+.energy-reserve .reserve-card{position:relative;min-height:610px;padding:48px 42px 42px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.energy-reserve .reserve-card::before{content:"";position:absolute;left:38px;top:38px;width:116px;height:116px;border-radius:34px;background:#e7f0ff;border:4px solid #cfe1ff}
+.energy-reserve .reserve-card:nth-child(2)::before{background:#e5f8fb;border-color:#c4edf3}
+.energy-reserve .reserve-card:nth-child(3)::before{background:#e8f6ee;border-color:#cde9d9}
+.energy-reserve .reserve-card .symbol{position:absolute;left:67px;top:62px;font-size:58px;line-height:1;font-weight:950;color:var(--blue)}
+.energy-reserve .reserve-card:nth-child(2) .symbol{color:var(--cyan)}
+.energy-reserve .reserve-card:nth-child(3) .symbol{color:var(--green)}
+.energy-reserve .reserve-card h3{font-size:54px;line-height:1.1}
+.energy-reserve .reserve-card p{margin-top:24px;font-size:43px;line-height:1.3}
+.energy-reserve .bottom-line{position:absolute;left:50%;bottom:46px;transform:translateX(-50%);padding:18px 34px;border-radius:999px;background:#173c78;color:#fff;font-size:43px;font-weight:950;box-shadow:var(--shadow)}
+.s8 .copy{width:1200px}
+.s8 .copy p{width:1050px}
+.s9 .lens .claim{font-size:48px}
+.s10 .panel h2{font-size:78px}
+.s10 .evidence-card{font-size:40px}
+.s10 .final-verdict{font-size:72px;color:#174b94}
+.s11 .source .name{font-size:46px}
+.qa-note{display:none}
 
-/* Complete the energy-dependency graphic with the complementary share. */
-.s7 .meter-caption{display:flex;justify-content:space-between;align-items:center;margin-top:12px;font-size:32px;font-weight:900;color:#7d8ba0}
-.s7 .meter-caption strong{color:var(--red);font-size:35px}
 
-/* Editorial reset — flat, photographic, and deliberately non-dashboard. */
-:root{--paper:#f6f2e9;--ink:#1d1b18;--muted:#59544c;--blue:#9b3028;--cyan:#6b655b;--red:#9b3028;--green:#4d6251;--gold:#9b7a43;--line:#aaa296;--soft:#ece6da;--shadow:none}
-html,body{background:#d8d2c7;font-family:"Hiragino Sans","Noto Sans JP",Meiryo,sans-serif}
-#stage{background:#d8d2c7;perspective:2200px;overflow:hidden}
-#deck{transform-style:preserve-3d}
-.slide{transform-style:preserve-3d;backface-visibility:hidden}
-.slide{background:var(--paper);transform:none;transition:opacity .22s ease}
-.slide.past{transform:none}
-.slide::before{height:8px;background:var(--blue)}
-.kicker{display:none}
-h1,h2,h3{font-weight:800;letter-spacing:-.035em}
-p{color:var(--muted);font-weight:600}
-.pill{min-height:0;padding:12px 18px;border:1px solid var(--ink);border-radius:0;background:transparent;color:var(--ink);font-size:31px}
-.card,.photo,.s4 .leader,.s5 .side,.s6 .node,.s8 .chain-card,.s9 .question,.s10 .leaders-photo,.s11 .source-photo{border-radius:0!important;box-shadow:none!important}
-.card{background:transparent;border:2px solid var(--line)}
-.photo{background:#d9d4ca}
-.photo::after{display:none}
-.reveal{filter:none;transform:translateY(16px);transition:opacity .24s ease,transform .24s ease,border-color .18s ease}
-.reveal.from-left,.reveal.from-right{transform:translateY(16px)}
-.reveal.pop{transform:translateY(16px)}
-.reveal.wipe{clip-path:none;opacity:0;transform:translateY(16px)}
-.reveal.shown{opacity:1;filter:none;transform:none;clip-path:none}
-.reveal.shown.focus{border-color:var(--blue);box-shadow:none}
-#progress{height:6px;background:var(--blue)}
+/* self-review correction pass 2: remove verified overlaps and restore breathing room */
+.s4 .layout{padding:60px 92px;gap:24px}
+.s4 .leader{height:720px}
+.s5 .side{top:348px;min-height:460px}
+.s5 .side .bigline{margin-top:28px}
+.s5 .side .detail{margin-top:20px}
+.s6 .pm-photo{height:440px;margin-top:28px}
+.energy-reserve .layout{padding:70px 92px 160px;gap:30px}
+.energy-reserve .reserve-card{min-height:500px;padding-bottom:36px}
+.energy-reserve .bottom-line{bottom:44px}
+.s9 .layout{padding:60px 92px 126px}
+.s9 .group-photo{height:420px;margin-top:28px}
+.s9 .lenses{padding-bottom:70px;gap:18px}
+.s9 .lens{min-height:218px;padding-top:30px;padding-bottom:28px}
+.s9 .question{bottom:34px}
 
-/* Strip away the repeated UI motifs; leave only meaningful diagrams. */
-.s1 .hero-photo::before{background:linear-gradient(90deg,var(--paper) 0,rgba(246,242,233,.93) 15%,rgba(246,242,233,.12) 58%,transparent 78%)}
-.s2 .round-photo{height:720px;width:880px;aspect-ratio:auto;align-self:center}
-.s2 .orbit,.s2 .connector{display:none}
-.s2 .point{padding-left:82px;font-size:42px;background:transparent}
-.s2 .point .n{left:20px;width:42px;height:42px;border-radius:50%;font-size:25px;background:var(--blue)}
-.s3 .focus-caption,.s4 .thesis,.s5 .same,.s6 .verdict,.s9 .question{border-radius:0;background:var(--paper);border:2px solid var(--line);box-shadow:none}
-.s3 .agenda-item .dot{border-radius:50%;box-shadow:none}
-.s4 .leader{border:0}
-.s4 .bridge{height:4px;border-radius:0;background:var(--blue);box-shadow:none}
-.s5 .storm{background:#282522}
-.s5 .storm img{filter:grayscale(1) contrast(.92) brightness(.44)}
-.s5 .storm::after{background:rgba(0,0,0,.32)}
-.s5 .side{background:var(--paper);backdrop-filter:none}
-.s5 .vs{display:none!important}
-.s6 .node{border:0;background:transparent}
-.s6 .node .node-label{border-radius:0;background:var(--paper);font-size:34px;padding:8px 12px;color:var(--ink)}
-.s6 .route{stroke-width:5}
-.s7 .meter,.s7 .meter-fill,.s7 .route-line,.s7 .track{border-radius:0}
-.s7 .meter-fill{background:var(--blue)}
-.s7 .route-line{background:var(--blue)}
-.s7 .route-box{background:transparent}
-.s7 .strait::before,.s7 .strait::after{border-radius:0;background:var(--paper)}
-.s8 .mine img{filter:grayscale(.45) brightness(.78)}
-.s8 .chain-card{background:var(--paper)}
-.s8 .chain::before{border-radius:0;background:#c8c0b4}
-.s8 .chain::after{border-radius:0;background:var(--blue)}
-.s8 .stage-node i{border-radius:50%;box-shadow:none;background:var(--paper);border-color:var(--gold)}
-.s8 .measure{border-radius:0;background:transparent;border-color:var(--line)}
-.s9 .lens .lens-dot{box-shadow:none}
-.s9 .question{padding:14px 20px}
-.s10 .track{background:#d5cec2}
-.s10 .needle{background:var(--blue);box-shadow:none}
-.s11 .source{background:transparent}
-.s11 .thanks{color:var(--muted)}
+
+/* self-review correction pass 3: eliminate the final two text collisions */
+.s4 .leader .who{bottom:158px}
+.s5 .side{top:372px}
+
+
+/* self-review correction pass 4: final separation on the US-Europe slide */
+.s5 .same{bottom:28px}
 
 </style>
 </head>
@@ -422,201 +432,230 @@ p{color:var(--muted);font-weight:600}
 <div id="stage">
   <div id="deck">
 
-    <section class="slide s1" data-notes="導入。今回はG7そのものの説明だけでなく、今回の日本外交をどう評価するかが中心。画像：外務省掲載、内閣広報室提供のG7集合写真。">
-      <div class="photo hero-photo"><img src="assets/hero.jpg" alt="G7首脳集合写真"></div>
-      <div class="hero-copy">
-        <div class="kicker intro-a">G7 ÉVIAN 2026</div>
-        <h1 class="intro-b">G7</h1>
-        <div class="question intro-b">高市外交、<br>どう見る？</div>
-        <p class="sub intro-c">米欧のずれと、エネルギー・重要鉱物の供給網から見ていく</p>
-        <div class="hero-tags intro-d"><span class="pill">2026年6月</span><span class="pill">フランス・エビアン</span></div>
-      </div>
-    </section>
+<section class="slide s1" data-notes="導入。発表の中心は、G7の説明そのものよりも『今回の高市さんの外交方針が、実際の発言や行動にどう表れたか』を見ること。">
+  <div class="photo hero-photo"><img src="assets/hero.jpg" alt="G7エビアン・サミットの首脳集合写真"></div>
+  <div class="hero-copy">
+    <div class="kicker intro-a">G7 ÉVIAN 2026</div>
+    <h1 class="intro-b">G7</h1>
+    <div class="question intro-b">高市さんの外交、<br>どうだった？</div>
+    <p class="sub intro-c">米欧との関係と、エネルギー・サプライチェーンから考える</p>
+    <div class="hero-tags intro-d"><span class="pill">2026年6月15–17日</span><span class="pill">フランス・エビアン</span></div>
+  </div>
+</section>
 
-    <section class="slide s2" data-notes="班で出た「お偉いさんの会食」という印象を否定から入らず、首脳間の調整の場として説明する。">
-      <div class="layout">
-        <div class="copy">
-          <div class="kicker">WHAT IS G7?</div>
-          <h2>G7は、<br>何をする場？</h2>
-          <p>主要国の首脳が、短期間で<br>方向をそろえる場。</p>
-          <div class="point-stack">
-            <div class="card point reveal from-left dim-on-progress" data-step="1"><span class="n">1</span>法律で命令する組織ではない</div>
-            <div class="card point reveal from-left dim-on-progress" data-step="2"><span class="n">2</span>首脳が直接、考えをすり合わせる</div>
-            <div class="card point reveal from-left dim-on-progress" data-step="3"><span class="n">3</span>共同声明で世界の流れをつくる</div>
-          </div>
-        </div>
-        <div class="photo round-photo"><img src="assets/roundtable.jpg" alt="2026年エビアンG7の作業会議"></div>
+<section class="slide s2" data-notes="班では『お偉いさんが会食している』『1日ではなさそう』『時事問題で議題が変わる』というイメージが出た。そこから実態を整理する。">
+  <div class="layout">
+    <div class="copy">
+      <div class="kicker">WHAT IS G7?</div>
+      <h2>G7サミットは、<br>どんな場？</h2>
+      <div class="class-voice">班で出たイメージから確認</div>
+      <div class="point-stack">
+        <div class="card point reveal from-left dim-on-progress" data-step="1"><span class="n"></span>7か国＋EUの首脳が集まる</div>
+        <div class="card point reveal from-left dim-on-progress" data-step="2"><span class="n"></span>3日間、重要課題を直接話す</div>
+        <div class="card point reveal from-left dim-on-progress" data-step="3"><span class="n"></span>共同声明などの成果を公表する</div>
       </div>
-      <div class="orbit"></div>
-      <div class="connector"></div>
-    </section>
+      <div class="answer-line">会食の場というより、首脳が方向をそろえる場。</div>
+    </div>
+    <div class="photo round-photo"><img src="assets/roundtable.jpg" alt="G7の円卓会合"></div>
+  </div>
+  <div class="orbit"></div>
+  <div class="connector"></div>
+</section>
 
-    <section class="slide s3" data-notes="議題を全部並べると発表が散るため、4つに整理。中東と供給網が後半につながる。">
-      <div class="photo bg-photo"><img src="assets/leaders.jpg" alt="G7会場の首脳"></div>
-      <div class="layout">
-        <div class="kicker">FOUR FOCUSES</div>
-        <h2>今回、何が重かった？</h2>
-        <p>細かい議題は多い。<br>発表では、この4つに絞る。</p>
-        <div class="agenda">
-          <div class="card agenda-item reveal pop dim-on-progress" data-step="1"><span class="dot"></span>ウクライナ</div>
-          <div class="card agenda-item reveal pop dim-on-progress" data-step="2"><span class="dot"></span>中東・ホルムズ海峡</div>
-          <div class="card agenda-item reveal pop dim-on-progress" data-step="3"><span class="dot"></span>世界経済・供給網</div>
-          <div class="card agenda-item reveal pop dim-on-progress" data-step="4"><span class="dot"></span>AIとデジタル</div>
-        </div>
-      </div>
-      <div class="focus-caption reveal from-right" data-step="4">後半は「供給網」に注目</div>
-    </section>
+<section class="slide s3" data-notes="今回のG7全体で扱われた内容。議題を全部並べると散るため、発表では国際危機、世界経済と供給網、エネルギー、AIの4つに整理する。">
+  <div class="photo bg-photo"><img src="assets/leaders.jpg" alt="G7会場の首脳"></div>
+  <div class="layout">
+    <div class="kicker">THIS YEAR'S AGENDA</div>
+    <h2>今回、G7全体で<br>何を話した？</h2>
+    <p>安全保障だけでなく、<br>経済と先端技術まで幅広い。</p>
+    <div class="agenda">
+      <div class="card agenda-item reveal pop dim-on-progress" data-step="1"><span class="dot"></span>ウクライナ・中東</div>
+      <div class="card agenda-item reveal pop dim-on-progress" data-step="2"><span class="dot"></span>世界経済・供給網</div>
+      <div class="card agenda-item reveal pop dim-on-progress" data-step="3"><span class="dot"></span>ホルムズ海峡・エネルギー</div>
+      <div class="card agenda-item reveal pop dim-on-progress" data-step="4"><span class="dot"></span>AIの安全とルール</div>
+    </div>
+  </div>
+  <div class="focus-caption reveal from-right" data-step="4">この発表は「外交」と「供給網」に注目</div>
+</section>
 
-    <section class="slide s4" data-notes="英国・イタリアとの事前会談、フランス・EUとの接触を『橋渡し』の前提として見せる。">
-      <div class="layout">
-        <div class="head">
-          <div>
-            <div class="kicker">JAPAN'S AIM</div>
-            <h2>日本は、どこを狙った？</h2>
-          </div>
-          <p>同盟を土台にしながら、<br>欧州との連携を広げる。</p>
-        </div>
-        <div class="triptych">
-          <div class="leader reveal from-left" data-step="1"><img src="assets/uk.jpg" alt="2026年エビアンG7首脳会合"><div class="who">英国<small>連携の土台を広げる</small></div></div>
-          <div class="leader reveal pop" data-step="2"><img src="assets/italy.jpg" alt="2026年エビアンG7におけるイタリア首相"><div class="who">イタリア・EU<small>欧州側との接点</small></div></div>
-          <div class="leader reveal from-right" data-step="3"><img src="assets/france.jpg" alt="2026年エビアンG7会場のフランス大統領"><div class="who">フランス<small>議長国との調整</small></div></div>
-          <div class="bridge"></div>
-          <div class="thesis">日米同盟 × 欧州連携 × 経済安全保障</div>
-        </div>
+<section class="slide s4" data-notes="高市首相の外交方針は、日米同盟を基軸に置きつつ、欧州との連携を広げること。安全保障に加え、エネルギーや重要鉱物など経済安全保障も重視した。">
+  <div class="layout">
+    <div class="head">
+      <div>
+        <div class="kicker">TAKAICHI'S POLICY</div>
+        <h2>高市さんの外交方針</h2>
       </div>
-    </section>
+      <p>日米同盟を基軸に、<br>経済安全保障も重視。</p>
+    </div>
+    <div class="triptych">
+      <div class="leader reveal from-left" data-step="1"><img src="assets/uk.jpg" alt="日英首脳会談"><div class="who">英国<small>G7直前に認識をすり合わせ</small></div></div>
+      <div class="leader reveal pop" data-step="2"><img src="assets/italy.jpg" alt="日伊首脳会談"><div class="who">イタリア・EU<small>欧州側との接点を増やす</small></div></div>
+      <div class="leader reveal from-right" data-step="3"><img src="assets/france.jpg" alt="日仏首脳会談"><div class="who">フランス<small>議長国とも直接調整</small></div></div>
+      <div class="bridge"></div>
+      <div class="thesis">日米同盟を軸に、欧州との連携も広げる</div>
+    </div>
+  </div>
+</section>
 
-    <section class="slide s5" data-notes="価値観の一致と手段のずれを見せる。関税や防衛負担など、政策手段でずれが出る点に絞る。">
-      <div class="storm"><img src="assets/divide.jpg" alt="対立を表す稲妻"></div>
-      <div class="title"><div class="kicker" style="color:#8ed8ff">US AND EUROPE</div><h2>同じ方向でも、<br>やり方は違う</h2><p>民主主義・安全保障では重なる。違うのは「進め方」。</p></div>
-      <div class="side usa-side reveal from-left" data-step="1">
-        <h3>米国</h3>
-        <div class="bigline">即効性と<br>取引を重視</div>
-        <div class="detail">関税や防衛負担を、交渉材料として前面に出しやすい。</div>
-      </div>
-      <div class="side eu-side reveal from-right" data-step="2">
-        <h3>欧州</h3>
-        <div class="bigline">制度と<br>継続性を重視</div>
-        <div class="detail">ルールや多国間の枠組みを通じて、長く続く合意を目指す。</div>
-      </div>
-      <div class="vs" data-step="3">≠</div>
-      <div class="same" data-step="3">目標は近い。でも、手段にはずれがある。</div>
-    </section>
+<section class="slide s5" data-notes="米国と欧州は、民主主義、安全保障、対ロシア・対中国など大きな方向性では一致する。一方、関税、防衛負担、ウクライナ支援、グリーンランドをめぐる発言など、具体的な政策では対立がある。">
+  <div class="storm"><img src="assets/divide.jpg" alt="米国と欧州の対立を表す稲妻"></div>
+  <div class="title"><div class="kicker" style="color:#8ed8ff">US AND EUROPE</div><h2>アメリカと欧州、<br>なぜ対立？</h2><p>方向性は一致。でも、具体的な政策で対立している。</p></div>
+  <div class="side usa-side reveal from-left" data-step="1">
+    <h3>米国</h3>
+    <div class="bigline">関税と負担を<br>交渉材料に</div>
+    <div class="detail">対EU関税、NATOの負担、グリーンランド発言など。</div>
+  </div>
+  <div class="side eu-side reveal from-right" data-step="2">
+    <h3>欧州</h3>
+    <div class="bigline">制度と<br>継続性を重視</div>
+    <div class="detail">同盟国間のルールや、多国間での合意を重視する。</div>
+  </div>
+  <div class="vs" data-step="3">≠</div>
+  <div class="same" data-step="3">民主主義・安全保障など、大きな方向性は近い。</div>
+</section>
 
-    <section class="slide s6" data-notes="双方と接触したことを視覚的に見せる。接触範囲は評価できるが、仲裁の決着とは分けて説明する。">
-      <div class="layout">
-        <div class="left">
-          <div class="kicker">BRIDGE ROLE?</div>
-          <h2>つなぐ役は、<br>できた？</h2>
-          <p>短期間で米国・欧州側の双方と接触。<br>ただし、接触と仲裁は同じではない。</p>
-          <div class="photo pm-photo"><img src="assets/pm.jpg" alt="2026年エビアンG7会期中の高市首相"></div>
-        </div>
-        <div class="network">
-          <svg class="routes" viewBox="0 0 970 932" aria-hidden="true">
-            <path class="route us" d="M40 540 C170 430, 190 340, 255 250"/>
-            <path class="route eu" d="M40 540 C360 410, 620 330, 755 250"/>
-            <path class="route g7" d="M40 540 C260 650, 440 715, 495 770"/>
-          </svg>
-          <div class="node node-us reveal pop" data-step="1"><img src="assets/usa.jpg" alt="2026年エビアンG7作業会議の米国大統領"><div class="node-label">米国</div></div>
-          <div class="node node-eu reveal pop" data-step="2"><img src="assets/france.jpg" alt="2026年エビアンG7会場のフランス大統領"><div class="node-label">欧州</div></div>
-          <div class="node node-g7 reveal pop" data-step="3"><img src="assets/roundtable.jpg" alt="G7会合"><div class="node-label">G7全体</div></div>
-          <div class="verdict">接触範囲は広い。<br><span class="red">でも、仲裁の決着はまだ。</span></div>
-        </div>
-      </div>
-    </section>
+<section class="slide s6" data-notes="日本はG7直前に英国・イタリアと会談し、サミット中には米国、フランス、EUとも接触した。橋渡しを試みた動きは見えるが、米欧の溝を埋めたといえる具体的成果までは確認しにくい。">
+  <div class="layout">
+    <div class="left">
+      <div class="kicker">JAPAN'S MOVE</div>
+      <h2>日本は、<br>どう動いた？</h2>
+      <p>米国と欧州の双方に接触。<br>橋渡し役を担おうとした。</p>
+      <div class="photo pm-photo"><img src="assets/pm.jpg" alt="高市首相"></div>
+    </div>
+    <div class="network">
+      <svg class="routes" viewBox="0 0 970 932" aria-hidden="true">
+        <path class="route us" d="M40 540 C170 430, 190 340, 255 250"/>
+        <path class="route eu" d="M40 540 C360 410, 620 330, 755 250"/>
+        <path class="route g7" d="M40 540 C260 650, 440 715, 495 770"/>
+      </svg>
+      <div class="node node-us reveal pop" data-step="1"><img src="assets/usa.jpg" alt="米国大統領"><div class="node-label">米国</div></div>
+      <div class="node node-eu reveal pop" data-step="2"><img src="assets/france.jpg" alt="欧州首脳との会談"><div class="node-label">欧州</div></div>
+      <div class="node node-g7 reveal pop" data-step="3"><img src="assets/roundtable.jpg" alt="G7全体会合"><div class="node-label">G7全体</div></div>
+      <div class="verdict">橋渡しを試みた。<br><span class="red">ただし、具体的な進展は見えにくい。</span></div>
+    </div>
+  </div>
+</section>
 
-    <section class="slide s7" data-notes="2023年度の原油輸入の中東依存度は94.7%。供給源と輸送経路の二重依存として説明する。">
-      <div class="layout">
-        <div class="photo sea"><img src="assets/tanker.jpg" alt="ホルムズ海峡を航行するタンカー"></div>
-        <div class="panel">
-          <div class="kicker">ENERGY SECURITY</div>
-          <h2>日本の弱点は、<br>供給源と通り道</h2>
-          <p>中東への依存に加えて、<br>運ぶルートにもリスクがある。</p>
-          <div class="stat-row reveal pop" data-step="1"><div class="stat"><span data-count="94.7">0.0</span>%</div><div class="stat-unit">原油の中東依存</div></div>
-          <div class="meter reveal wipe" data-step="1"><div class="meter-fill"></div></div>
-          <div class="meter-caption reveal" data-step="1"><strong>中東 94.7%</strong><span>その他地域 5.3%</span></div>
-          <div class="card route-box reveal from-right" data-step="2">
-            <div class="route-title">供給ルートの「細い首」</div>
-            <div class="route"><div class="route-line"></div><div class="strait"><div class="strait-label">ホルムズ海峡</div></div><div class="route-line"></div></div>
-          </div>
-          <div class="impact reveal" data-step="3"><span class="impact-item">燃料</span><span class="arrow">→</span><span class="impact-item">物流</span><span class="arrow">→</span><span class="impact-item">生活</span></div>
-        </div>
-      </div>
-    </section>
+<section class="slide s7 energy-source" data-notes="供給源への依存。2023年度の日本の原油輸入に占める中東依存度は94.7%。中東情勢の悪化が、原油価格や供給不足を通じて国内経済と生活に影響する。">
+  <div class="layout">
+    <div class="photo sea"><img src="assets/tanker.jpg" alt="原油タンカー"></div>
+    <div class="panel">
+      <div class="kicker">ENERGY 1 / 3</div>
+      <h2>供給源への依存に<br>対する懸念</h2>
+      <p>日本は原油の大部分を中東から輸入。<br>情勢悪化が、価格と供給に直結する。</p>
+      <div class="stat-row reveal pop" data-step="1"><div class="stat"><span data-count="94.7">0.0</span>%</div><div class="stat-unit">原油の中東依存</div></div>
+      <div class="meter reveal wipe" data-step="1"><div class="meter-fill"></div></div>
+      <div class="source-callout reveal from-right" data-step="2"><b>一つの地域に頼りすぎない。</b><br>調達先の多様化と分散が必要。</div>
+      <div class="impact reveal" data-step="3"><span class="impact-item">中東情勢</span><span class="arrow">→</span><span class="impact-item">原油価格</span><span class="arrow">→</span><span class="impact-item">生活</span></div>
+    </div>
+  </div>
+</section>
 
-    <section class="slide s8" data-notes="G7重要鉱物サプライチェーン宣言の内容を、備蓄・追跡・共同警戒・投資・再利用に整理して説明する。">
-      <div class="photo mine"><img src="assets/mine.jpg" alt="重要鉱物の採掘現場"></div>
-      <div class="copy"><div class="kicker" style="color:#a8ddff">CRITICAL MINERALS</div><h2>備蓄だけでは足りない</h2><p>採掘・精製・流通。どこか一つが詰まると、全体が止まりやすい。</p></div>
-      <div class="chain-card">
-        <div class="chain reveal" data-step="1">
-          <div class="stage-node"><i></i>採掘</div>
-          <div class="stage-node"><i></i>精製</div>
-          <div class="stage-node"><i></i>流通</div>
-          <div class="stage-node"><i></i>利用</div>
-          <div class="bottleneck"></div>
-        </div>
-        <div class="measures">
-          <div class="measure reveal from-left" data-step="2"><b>見える化と早期対応</b><br>備蓄・追跡・共同警戒</div>
-          <div class="measure reveal from-right" data-step="3"><b>供給先を増やす</b><br>投資・再利用</div>
-        </div>
+<section class="slide energy-route" data-notes="供給経路の確保。日本へ輸入される原油の多くはホルムズ海峡などの重要な海上輸送路を通る。供給源だけでなく、安全に運べるルートを維持する必要がある。">
+  <div class="layout">
+    <div class="photo map"><img src="assets/strait-of-hormuz.svg" alt="ホルムズ海峡周辺の地図"></div>
+    <div class="panel">
+      <div class="kicker">ENERGY 2 / 3</div>
+      <h2>供給経路の確保</h2>
+      <p>資源があっても、<br>安全に運べなければ日本へ届かない。</p>
+      <div class="route-points">
+        <div class="card route-point reveal from-right" data-step="1"><i></i>ホルムズ海峡などのシーレーン</div>
+        <div class="card route-point reveal from-right" data-step="2"><i></i>紛争や封鎖による輸送リスク</div>
+        <div class="card route-point reveal from-right" data-step="3"><i></i>G7で海上交通の維持に連携</div>
       </div>
-    </section>
+      <div class="route-thesis reveal" data-step="3">供給源だけでなく、「通り道」も守る。</div>
+    </div>
+  </div>
+</section>
 
-    <section class="slide s9" data-notes="海外報道は一枚岩ではない。評価の違いを、立場の違いとして扱う。">
-      <div class="layout">
-        <div class="left">
-          <div class="kicker">THREE LENSES</div>
-          <h2>評価は、<br>見る立場で変わる</h2>
-          <p>同じ会議でも、<br>何を重視するかで見え方が違う。</p>
-          <div class="photo group-photo"><img src="assets/hero.jpg" alt="G7首脳集合写真"></div>
-        </div>
-        <div class="lenses">
-          <div class="card lens reveal from-right dim-on-progress" data-step="1"><span class="lens-dot"></span><div class="label">前向きな見方</div><div class="claim">日本は橋渡し役を担った</div></div>
-          <div class="card lens reveal from-right dim-on-progress" data-step="2"><span class="lens-dot"></span><div class="label">批判的な見方</div><div class="claim">対中包囲の一部では？</div></div>
-          <div class="card lens reveal from-right dim-on-progress" data-step="3"><span class="lens-dot"></span><div class="label">公式成果</div><div class="claim">供給網の具体策が前進</div></div>
-        </div>
-      </div>
-      <div class="question" data-step="4">「誰の立場から見るか」も確認する</div>
-    </section>
+<section class="slide energy-reserve" data-notes="石油備蓄とエネルギー安全保障。危機が起きてから対応するのではなく、平時から備蓄を整え、必要時には各国で協調放出できる体制を持つことが重要。">
+  <div class="layout">
+    <div class="head">
+      <div><div class="kicker">ENERGY 3 / 3</div><h2>石油備蓄・<br>エネルギー安全保障</h2></div>
+      <p>危機が起きてからでは遅い。<br>平時から備える。</p>
+    </div>
+    <div class="reserve-grid">
+      <div class="card reserve-card reveal from-left" data-step="1"><span class="symbol">備</span><h3>石油備蓄</h3><p>供給が止まったときに使える量を確保する。</p></div>
+      <div class="card reserve-card reveal pop" data-step="2"><span class="symbol">協</span><h3>協調放出</h3><p>必要な場合は、G7各国が連携して市場を安定させる。</p></div>
+      <div class="card reserve-card reveal from-right" data-step="3"><span class="symbol">強</span><h3>供給網強化</h3><p>調達先と輸送ルートを多様化し、長期的に備える。</p></div>
+    </div>
+  </div>
+  <div class="bottom-line">持続的で安定したエネルギー供給体制へ</div>
+</section>
 
-    <section class="slide s10" data-notes="最終評価。『成功寄りの及第点』。理由は、議題設定と成果接続はできたが、米欧対立の解消までは見えないため。">
-      <div class="layout">
-        <div class="panel">
-          <div class="kicker">FINAL VIEW</div>
-          <h2>高市外交、<br>どう評価する？</h2>
-          <p>先に根拠を見てから、最後に結論を出す。</p>
-          <div class="evidence">
-            <div class="card evidence-card reveal from-left dim-on-progress" data-step="1">存在感は上がった</div>
-            <div class="card evidence-card reveal from-left dim-on-progress" data-step="2">経済安全保障を前に出せた</div>
-            <div class="card evidence-card reveal from-left dim-on-progress" data-step="3">ただし、仲裁成果は限定的</div>
-          </div>
-          <div class="balance reveal" data-step="4">
-            <div class="track"><div class="needle"></div></div>
-            <div class="scale-labels"><span>課題が大きい</span><span>成果が大きい</span></div>
-          </div>
-          <div class="final-verdict">成功寄りの及第点</div>
-        </div>
-        <div class="photo leaders-photo"><img src="assets/leaders.jpg" alt="日本・フランス・EUの首脳"></div>
-      </div>
-    </section>
+<section class="slide s8" data-notes="エネルギーだけでなく、半導体や電池に必要な重要鉱物も経済安全保障の課題。G7では備蓄、追跡、共同警戒、投資、再利用など、供給網全体を強くする具体策が示された。">
+  <div class="photo mine"><img src="assets/mine.jpg" alt="重要鉱物の採掘現場"></div>
+  <div class="copy"><div class="kicker" style="color:#a8ddff">CRITICAL MINERALS</div><h2>重要鉱物も、同じ問題</h2><p>半導体や電池に必要な鉱物も、特定国への依存がリスクになる。</p></div>
+  <div class="chain-card">
+    <div class="chain reveal" data-step="1">
+      <div class="stage-node"><i></i>採掘</div>
+      <div class="stage-node"><i></i>精製</div>
+      <div class="stage-node"><i></i>流通</div>
+      <div class="stage-node"><i></i>利用</div>
+      <div class="bottleneck"></div>
+    </div>
+    <div class="measures">
+      <div class="measure reveal from-left" data-step="2"><b>危機に早く気づく</b><br>備蓄・追跡・共同警戒</div>
+      <div class="measure reveal from-right" data-step="3"><b>依存先を分散する</b><br>投資・調達先・再利用</div>
+    </div>
+  </div>
+</section>
 
-    <section class="slide s11" data-notes="質疑用。発表中に細かいURLは読ませない。必要なら発表者ノートで確認。">
-      <div class="layout">
-        <div class="left">
-          <div class="kicker">SOURCES</div>
-          <h2>主に見た資料</h2>
-          <p>細かいURLは投影せず、<br>資料の種類だけを示す。</p>
-          <div class="photo source-photo"><img src="assets/roundtable.jpg" alt="G7円卓会合"></div>
-        </div>
-        <div class="sources">
-          <div class="card source"><div class="kind">政府発表</div><div class="name">外務省<br>G7関連ページ</div></div>
-          <div class="card source"><div class="kind">共同文書</div><div class="name">G7重要鉱物<br>サプライチェーン宣言</div></div>
-          <div class="card source"><div class="kind">統計・解説</div><div class="name">資源エネルギー庁<br>資料</div></div>
-          <div class="card source"><div class="kind">海外報道</div><div class="name">Reuters / SCMP<br>Global Times</div></div>
-        </div>
+<section class="slide s9" data-notes="海外ニュースから見た日本の印象。欧米報道では安定した参加国、実務提案の担い手という見方がある。一方、中国側では対中包囲の試みとして批判的に報じる見方もある。">
+  <div class="layout">
+    <div class="left">
+      <div class="kicker">OVERSEAS MEDIA</div>
+      <h2>海外ニュースから見た<br>日本の印象</h2>
+      <p>同じ行動でも、<br>媒体の立場で意味づけが変わる。</p>
+      <div class="photo group-photo"><img src="assets/hero.jpg" alt="G7首脳集合写真"></div>
+    </div>
+    <div class="lenses">
+      <div class="card lens reveal from-right dim-on-progress" data-step="1"><span class="lens-dot"></span><div class="label">欧米報道</div><div class="claim">欧州と歩調を合わせる安定参加国</div></div>
+      <div class="card lens reveal from-right dim-on-progress" data-step="2"><span class="lens-dot"></span><div class="label">実務面の評価</div><div class="claim">重要鉱物など具体策の担い手</div></div>
+      <div class="card lens reveal from-right dim-on-progress" data-step="3"><span class="lens-dot"></span><div class="label">中国側の見方</div><div class="claim">対中包囲の試みとして批判</div></div>
+    </div>
+  </div>
+  <div class="question" data-step="4">評価を見るときは「誰の立場か」も確認する</div>
+</section>
+
+<section class="slide s10" data-notes="最終評価は『及第点ぐらい』。方針に沿った発言と行動はあり、経済安全保障を前に出せた。一方、米欧間の橋渡しで具体的成果が見えたとは言いにくい。">
+  <div class="layout">
+    <div class="panel">
+      <div class="kicker">FINAL VIEW</div>
+      <h2>今回の高市さんは<br>どうだった？</h2>
+      <p>成功・及第点・失敗のどれか。</p>
+      <div class="evidence">
+        <div class="card evidence-card reveal from-left dim-on-progress" data-step="1">方針に沿った発言と動きはあった</div>
+        <div class="card evidence-card reveal from-left dim-on-progress" data-step="2">米欧の間で動いたが、成果は限定的</div>
+        <div class="card evidence-card reveal from-left dim-on-progress" data-step="3">経済安全保障を前に出せた</div>
       </div>
-      <div class="thanks">ご清聴ありがとうございました</div>
-    </section>
+      <div class="balance reveal" data-step="4">
+        <div class="track"><div class="needle"></div></div>
+        <div class="scale-labels"><span>失敗</span><span>成功</span></div>
+      </div>
+      <div class="final-verdict">及第点ぐらい</div>
+    </div>
+    <div class="photo leaders-photo"><img src="assets/leaders.jpg" alt="G7首脳"></div>
+  </div>
+</section>
+
+<section class="slide s11" data-notes="出典。発表中に長いURLは読ませず、資料名だけ示す。詳しいURLと画像の出典はassets/sources.jsonに整理している。">
+  <div class="layout">
+    <div class="left">
+      <div class="kicker">SOURCES</div>
+      <h2>出典</h2>
+      <p>投影では資料名だけ。<br>詳しいURLは別に確認できる。</p>
+      <div class="photo source-photo"><img src="assets/roundtable.jpg" alt="G7円卓会合"></div>
+    </div>
+    <div class="sources">
+      <div class="card source"><div class="kind">日本政府</div><div class="name">外務省<br>G7エビアン概要</div></div>
+      <div class="card source"><div class="kind">議長国発表</div><div class="name">フランス大統領府<br>G7成果文書</div></div>
+      <div class="card source"><div class="kind">統計</div><div class="name">資源エネルギー庁<br>原油輸入資料</div></div>
+      <div class="card source"><div class="kind">海外報道</div><div class="name">AP / Reuters<br>Global Times</div></div>
+    </div>
+  </div>
+  <div class="thanks">ご清聴ありがとうございました</div>
+</section>
 
   </div>
 </div>

@@ -8,28 +8,28 @@
     },
     {
       "asset": "roundtable.jpg",
-      "source_file": "President Donald J. Trump attends G7 working session V, on AI and the digital age, at the Hotel Royal Evian (55342499062).jpg",
-      "source_page": "https://commons.wikimedia.org/wiki/File:President_Donald_J._Trump_attends_G7_working_session_V,_on_AI_and_the_digital_age,_at_the_Hotel_Royal_Evian_(55342499062).jpg"
+      "source_file": "G7 leaders on Day 1 roundtable meeting at Scholss Elmau Summit (2).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:G7_leaders_on_Day_1_roundtable_meeting_at_Scholss_Elmau_Summit_(2).jpg"
     },
     {
       "asset": "leaders.jpg",
-      "source_file": "2026 G7 meeting in France.jpg",
-      "source_page": "https://commons.wikimedia.org/wiki/File:2026_G7_meeting_in_France.jpg"
+      "source_file": "Group photo of the G7 members under the Alps at the Scholss Elmau summit.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Group_photo_of_the_G7_members_under_the_Alps_at_the_Scholss_Elmau_summit.jpg"
     },
     {
       "asset": "uk.jpg",
-      "source_file": "Prime Minister Keir Starmer attends G7 Leaders Summit in Evian (55337297111).jpg",
-      "source_page": "https://commons.wikimedia.org/wiki/File:Prime_Minister_Keir_Starmer_attends_G7_Leaders_Summit_in_Evian_(55337297111).jpg"
+      "source_file": "Prime Minister Keir Starmer meets Prime Minister of Japan Sanae Takaichi.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Prime_Minister_Keir_Starmer_meets_Prime_Minister_of_Japan_Sanae_Takaichi.jpg"
     },
     {
       "asset": "italy.jpg",
-      "source_file": "Prime Minister of Bharat, Shri Narendra Damodardas Modi and the Prime Minister of Italy, Ms. Giorgia Meloni at the 52nd G7 summit.jpg",
-      "source_page": "https://commons.wikimedia.org/wiki/File:Prime_Minister_of_Bharat,_Shri_Narendra_Damodardas_Modi_and_the_Prime_Minister_of_Italy,_Ms._Giorgia_Meloni_at_the_52nd_G7_summit.jpg"
+      "source_file": "Sanae Takaichi and Giorgia Meloni Italy-Japan summit 04.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sanae_Takaichi_and_Giorgia_Meloni_Italy-Japan_summit_04.jpg"
     },
     {
       "asset": "france.jpg",
-      "source_file": "The President of France, Mr. Emmanuel Macron welcomes the Prime Minister of Bharat, Shri Narendra Damodardas Modi at G7 summit venue in Evian.jpg",
-      "source_page": "https://commons.wikimedia.org/wiki/File:The_President_of_France,_Mr._Emmanuel_Macron_welcomes_the_Prime_Minister_of_Bharat,_Shri_Narendra_Damodardas_Modi_at_G7_summit_venue_in_Evian.jpg"
+      "source_file": "Sanae Takaichi and Emmanuel Macron visit to Astroscale (2).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sanae_Takaichi_and_Emmanuel_Macron_visit_to_Astroscale_(2).jpg"
     },
     {
       "asset": "divide.jpg",
@@ -38,13 +38,13 @@
     },
     {
       "asset": "pm.jpg",
-      "source_file": "16.06.2026 - Reunião com a Primeira-Ministra do Japão, Sanae Takaichi - 55338573873.jpg",
-      "source_page": "https://commons.wikimedia.org/wiki/File:16.06.2026_-_Reunião_com_a_Primeira-Ministra_do_Japão,_Sanae_Takaichi_-_55338573873.jpg"
+      "source_file": "Official portrait of Sanae Takaichi, Prime Minister of Japan (HD).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Official_portrait_of_Sanae_Takaichi,_Prime_Minister_of_Japan_(HD).jpg"
     },
     {
       "asset": "usa.jpg",
-      "source_file": "President Donald J. Trump attends G7 working session V, on AI and the digital age, at the Hotel Royal Evian (55342499062).jpg",
-      "source_page": "https://commons.wikimedia.org/wiki/File:President_Donald_J._Trump_attends_G7_working_session_V,_on_AI_and_the_digital_age,_at_the_Hotel_Royal_Evian_(55342499062).jpg"
+      "source_file": "January 2025 Official Presidential Portrait of Donald J. Trump.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:January_2025_Official_Presidential_Portrait_of_Donald_J._Trump.jpg"
     },
     {
       "asset": "tanker.jpg",
@@ -55,6 +55,33 @@
       "asset": "mine.jpg",
       "source_file": "Mountain Pass Rare Earth Mine, Mountain Pass, California (15469739669).jpg",
       "source_page": "https://commons.wikimedia.org/wiki/File:Mountain_Pass_Rare_Earth_Mine,_Mountain_Pass,_California_(15469739669).jpg"
+    }
+  ],
+  "content_sources": [
+    {
+      "title": "外務省 高市総理大臣の英国・イタリア訪問及びG7エビアン・サミット出席",
+      "url": "https://www.mofa.go.jp/mofaj/ecm/epc/pageit_000001_00011.html",
+      "used_for": "日程、各セッション、日英・日伊・日仏・日米・EUとの接触"
+    },
+    {
+      "title": "フランス大統領府 G7 Évian 2026 結果",
+      "url": "https://www.elysee.fr/G7evian/2026/06/17/les-resultats-du-g7-de-vian",
+      "used_for": "主要議題と首脳声明の全体整理"
+    },
+    {
+      "title": "G7重要鉱物サプライチェーン確保に関する首脳宣言",
+      "url": "https://www.elysee.fr/G7evian/2026/06/17/declaration-des-chefs-detat-et-de-gouvernement-du-g7-sur-la-securisation-des-chaines-dapprovisionnement-en-minerais-critiques",
+      "used_for": "備蓄、追跡、共同警戒、投資、再利用などの具体策"
+    },
+    {
+      "title": "Reuters G7 critical minerals alliance report",
+      "url": "https://www.reuters.com/world/europe/g7-sets-up-critical-minerals-alliance-crisis-platform-2026-06-17/",
+      "used_for": "重要鉱物をめぐる海外報道の確認"
+    },
+    {
+      "title": "資源エネルギー庁 エネルギー白書・石油統計",
+      "url": "https://www.enecho.meti.go.jp/about/whitepaper/",
+      "used_for": "日本の原油輸入における中東依存度（スライドでは2023年度94.7%を明記）"
     }
   ]
 }
