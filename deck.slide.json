@@ -1,0 +1,122 @@
+{
+  "collaboration": {
+    "branch": "main",
+    "draft": "default",
+    "sourceVersion": 2
+  },
+  "deck": {
+    "height": 1080,
+    "id": "162c3517-e977-48c3-8c07-dbf295865b89",
+    "themeId": "default",
+    "title": "G7",
+    "width": 1920
+  },
+  "format": "agentic-slide-project/v1",
+  "slides": [
+    {
+      "id": "69397e61-781a-429b-ad7f-639309e1eb37",
+      "name": "G7",
+      "order": 0,
+      "path": "slides/69397e61-781a-429b-ad7f-639309e1eb37.html",
+      "sha256": "329b11cc89640ea72b5c157b59dc1d36544a44c8fc512fd2b7e11243c4d8cbd3"
+    },
+    {
+      "id": "104adf9a-7928-429d-8a47-f01758a1f8bf",
+      "name": "目次",
+      "order": 1,
+      "path": "slides/104adf9a-7928-429d-8a47-f01758a1f8bf.html",
+      "sha256": "b6c4bb8a23bd7ad2b09bb77be927ff0c550faa9161efee39e4902d1ee4ad0e4e"
+    },
+    {
+      "id": "e923a48c-1898-46fc-b556-2097fe01142d",
+      "name": "「G7サミット」はどんなイメージ？",
+      "order": 2,
+      "path": "slides/e923a48c-1898-46fc-b556-2097fe01142d.html",
+      "sha256": "2dbad9bc3fd3ae3c80b0ae456bb43e290689f17fcbf4e4f53ad075fbf3749264"
+    },
+    {
+      "id": "4428096e-b647-4a36-b1f9-4be3d7bc558d",
+      "name": "班で出たイメージ",
+      "order": 3,
+      "path": "slides/4428096e-b647-4a36-b1f9-4be3d7bc558d.html",
+      "sha256": "f25627d8e135e30c3b8b999c7e7bcc319bd0e0916484c71629aea3e79450b300"
+    },
+    {
+      "id": "d700f7dc-f390-4f05-a95b-19b26d899e2d",
+      "name": "G7サミットの概要​",
+      "order": 4,
+      "path": "slides/d700f7dc-f390-4f05-a95b-19b26d899e2d.html",
+      "sha256": "e0e072dbbf43954283bb196f4b8f5382469ec3f62d7c365c73f7f785b716b4f0"
+    },
+    {
+      "id": "6ca4f348-eb0a-4d76-83ba-c0247e751bc9",
+      "name": "今回G7全体で何話してた",
+      "order": 5,
+      "path": "slides/6ca4f348-eb0a-4d76-83ba-c0247e751bc9.html",
+      "sha256": "95a9a8571876631db38b939c4a1e72609676595601093bafa5370c41a11610ba"
+    },
+    {
+      "id": "03afe820-fe26-47aa-8529-a42369591e9d",
+      "name": "高市さん　今回のG7サミットにおける外交方針",
+      "order": 6,
+      "path": "slides/03afe820-fe26-47aa-8529-a42369591e9d.html",
+      "sha256": "83f38c29a80a2f4fcdcba2c16aadb6a716ff16dcb07c21eb00e7b1dc7774f709"
+    },
+    {
+      "id": "6677484c-e9e7-4316-b64d-babbced04321",
+      "name": "アメリカとヨーロッパ(欧州)の対立",
+      "order": 7,
+      "path": "slides/6677484c-e9e7-4316-b64d-babbced04321.html",
+      "sha256": "60f243863d20f26208973e533e0613c23c1ba40cc5dc5506c51e6a2a58c584e1"
+    },
+    {
+      "id": "4e1374e5-461b-4c49-8344-c11bb7725bf2",
+      "name": "欧州諸国とアメリカ関係の橋渡しに対する政府・総理の動き",
+      "order": 8,
+      "path": "slides/4e1374e5-461b-4c49-8344-c11bb7725bf2.html",
+      "sha256": "44460eba9fdcce45ce98bd04d8b2ccd71b1033528501781f093d1a81ad0b8c4e"
+    },
+    {
+      "id": "ac65928d-e61e-489e-82a1-105bfd47c1ec",
+      "name": "海外ニュースからみた各国から日本への印象",
+      "order": 9,
+      "path": "slides/ac65928d-e61e-489e-82a1-105bfd47c1ec.html",
+      "sha256": "fa9f03b5adbe50bfb658311e47275a4c8fe977297a0f5913650eb691524a7b51"
+    },
+    {
+      "id": "393b32e6-e20b-4517-b313-49a9f511de84",
+      "name": "エネルギー・サプライチェーンに対する発言",
+      "order": 10,
+      "path": "slides/393b32e6-e20b-4517-b313-49a9f511de84.html",
+      "sha256": "2c8516fef0d7d627736cdaee1b6cdf5ccabdcbf3ba0dede8f932ed6c79e74639"
+    },
+    {
+      "id": "caa07c71-25fb-459b-abac-7e6ba7ccf473",
+      "name": "今回の高市さんはどうだった？",
+      "order": 11,
+      "path": "slides/caa07c71-25fb-459b-abac-7e6ba7ccf473.html",
+      "sha256": "828e8bbbc76c20e536ceea8a2d614d09339472521d5264ff1f411f37eca66acb"
+    },
+    {
+      "id": "7b47b10d-b385-4b87-a606-6ff1f9ebb4a7",
+      "name": "出典",
+      "order": 12,
+      "path": "slides/7b47b10d-b385-4b87-a606-6ff1f9ebb4a7.html",
+      "sha256": "f45d4f26d4cdc252f6c2e45cbe35862744d40f66866d58c2de449e98b6296fa3"
+    },
+    {
+      "id": "dcefe952-f7df-4b07-afa7-dd13088b9b72",
+      "name": "欧州とアメリカの橋渡し",
+      "order": 13,
+      "path": "slides/dcefe952-f7df-4b07-afa7-dd13088b9b72.html",
+      "sha256": "eb82436155ee597d87cc06f30391f047f2b7afae6776d03c8621dc7a50e68b9b"
+    },
+    {
+      "id": "5961afa5-0371-43ee-8391-a28402048af7",
+      "name": "Slide 16",
+      "order": 14,
+      "path": "slides/5961afa5-0371-43ee-8391-a28402048af7.html",
+      "sha256": "5abb5a343c9ff62fdcb5b751f7bac392ff935acc259c46972b587421709b9a32"
+    }
+  ]
+}
